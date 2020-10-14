@@ -1,27 +1,34 @@
-#Group 1: Cam, Chris, Stefan, Rachel, Sabrina
+# Group 1: Cam, Chris, Stefan, Rachel, Sabrina
 
-##Company Name: 
+## Company Name: 
 
 Suki Ski & Board
 
-##Site Description: 
+## Site Description: 
 
 Specialty skis and boards, bindings and boots (services and repairs). Locally owned in Vancouver
 
-##Purpose: 
+## Purpose: 
 
 Feature - Personalized online service to match you with the perfect board or skis (questionnaire)
 
 
-##Userbase: 
+## Userbase: 
 
 enthusiasts, kids and families 
 
 
-##Technologies:
+## Technologies:
+- SASS
+- Bootstrap
 
 
-##Research: 
+## Colors & Graphics: 
+- [Blues](https://colorhunt.co/palette/206727)
+- [Beiges](https://colorhunt.co/palette/207398)
+- For logo and image design [Canva](https://www.canva.com/)
+
+## Research: 
 
 - the logo from [Skier Sport Shop](https://skierssportshop.com/)
 - custom board idea + parallax design [Kindred](https://kindredsnowstore.com/) [Wired](https://wiredsnowboards.com/)
@@ -34,7 +41,7 @@ enthusiasts, kids and families
 
 
 
-#Pages: 
+## Pages: 
 - homepage 
 - checkout form 
 - sign in/registe
@@ -43,7 +50,7 @@ enthusiasts, kids and families
 - 
 
 
-##Questions for Alex: 
+## Questions for Alex: 
 
 - list of functional/non-funtional requirements? 
 
