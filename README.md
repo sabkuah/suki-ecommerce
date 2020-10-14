@@ -21,7 +21,7 @@ enthusiasts, kids and families
 ## Technologies:
 - SASS
 - Bootstrap
-
+- Javascript
 
 ## Colors & Graphics: 
 - [Blues](https://colorhunt.co/palette/206727)
@@ -31,27 +31,64 @@ enthusiasts, kids and families
 ## Research: 
 
 - the logo from [Skier Sport Shop](https://skierssportshop.com/)
-- custom board idea + parallax design [Kindred](https://kindredsnowstore.com/) [Wired](https://wiredsnowboards.com/)
+- custom board idea + parallax design [Kindred](https://kindredsnowstore.com/) | [Wired](https://wiredsnowboards.com/)
 - checkout page [Stripe](https://stripe-payments-demo.appspot.com/)
 - messaging & endorsements [Skiis & Biikes](https://skiisandbiikes.com/)
 - sticky nav [Comor]()
-- technical details for product page [Burton](https://www.burton.com/ca/en/p/burton-family-tree-hometown-hero-camber-splitboard/W21-222401.html?cgid=womens-boards)[Salomon](https://www.salomon.com/en-ca/shop/product/hps-annie-boulanger.html#color=22602)
+- technical details for product page [Burton](https://www.burton.com/ca/en/p/burton-family-tree-hometown-hero-camber-splitboard/W21-222401.html?cgid=womens-boards) |[Salomon](https://www.salomon.com/en-ca/shop/product/hps-annie-boulanger.html#color=22602)
 - filter by brand logos [Evo](https://www.evo.com/shop/ski)
 
 
 
 
-## Pages: 
-- homepage 
-- checkout form 
-- sign in/registe
-- products
-- questionnaire 
-- 
+
+## Must-haves:
+- Shopping cart: add/remove products to cart, incr/decr quantity of items in cart, view final total before and after tax 
+- Login / register
+- Nav bar
+
+  
+
+## Nice-to-haves:
+- Questionnaire 
+- Modal with promotion on home page
+- filter products
+- Parallax [Tutorial](https://www.w3schools.com/howto/howto_css_parallax.asp)
+
+- Search bar
+
+
 
 
 ## Questions for Alex: 
 
-- list of functional/non-funtional requirements? 
+- clarification on personas 
 
+
+
+
+## Pages: 
+
+###  homepage
+- transparent nav 
+- full screen landing page image 
+- mission statement/brand description
+- Top Nav: Shop, About Us, Find My Ride, search, cart, login
+
+### products
+- Sidenav: snowboards, skis, junior, mens, womens
+- sale icons 
+
+
+### questionnaire 
+- "Find My Ride"
+
+
+### product details
+- reviews 
+- technical information
+
+### checkout form 
+
+### sign in/register
 
