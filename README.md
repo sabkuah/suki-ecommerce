@@ -92,3 +92,6 @@ enthusiasts, kids and families
 
 ### sign in/register
 
+## Wireframes/Prototypes
+
+![Stefan Products Prototype](./img/prototype/stefan-prototype.PNG)
