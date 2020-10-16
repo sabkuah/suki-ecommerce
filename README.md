@@ -99,3 +99,4 @@ enthusiasts, kids and families
 
 [Rachel's prototype](https://www.figma.com/file/PL6OgS8MsxomblxNK8yh1K/Suki-Ski-Board-e-commerce-site?node-id=0%3A1)
 
+[Sabrina's prototype](https://www.figma.com/file/ZKciXOKvBo17IHPdL2hAo1/Suki-Ski-Board?node-id=0%3A1)
