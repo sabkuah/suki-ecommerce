@@ -1,6 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Galdeano&display=swap";
-/*blue button for form submissions*/
+
 body {
   font-family: "Roboto", sans-serif; }
 
@@ -76,3 +76,17 @@ input {
   padding-bottom: 15px; }
 
 /*# sourceMappingURL=main.css.map */
+form {
+  text-align: center;
+}
+
+.q-field {
+  padding: 4em 1em;
+  height: auto;
+  border-radius: 0px;
+  background: #F6F6F6;
+  border: 1px solid #F6F6F6;
+}
+.q-field:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+
+form {
+  text-align: center;
+}
+
+.q-field {
+  padding: 4em 1em;
+  height: auto;
+  border-radius: 0px;
+  background: $grey-background;
+  border: 1px solid $grey-background;
+  &:hover {
+    cursor: pointer;
+  }
+}
