@@ -1,22 +1,22 @@
 
-var ridingtypes = ["All Mountain", "PARK / FREESTYLE", "TOURING / BACKCOUNTRY", "POWDER"];
-
+var ridingtypes = ["ALL MOUNTAIN", "PARK / FREESTYLE", "TOURING / BACKCOUNTRY", "POWDER"];
+var ridinglevel = ["Beginner", 'Intermediate', 'Expert']
 
 //  ---------------- CREATE RIDING TYPE OPTIONS ----------------
 
-ridingtypes.forEach(type => {
-  makeOption(type);
-})
-
-function makeOption() {
-  var items = ``;
-  ridingtypes.map(type => {
-   items +=`
-   <div class="card col-sm-12 col-md-3 col-lg-3">
-     <div class="card-body">
-       ${type}                
-     </div>
-   </div>`
-  })
-  document.getElementById("riding-type").innerHTML = items;
+function makeOption(array, id) {
+  let items = ``;
+  var size = 12 / array.length
+  array.map(type => {
+    items +=`
+    <div class="card col-sm-12 col-md-${size} col-lg-${size}">
+      <div class="card-body">
+        ${type}                
+      </div>
+    </div>`
+  })  
+   document.getElementById(id).innerHTML = items;
 }
+
+makeOption(ridingtypes, 'riding-type')
+makeOption(ridinglevel, 'riding-lvl')
