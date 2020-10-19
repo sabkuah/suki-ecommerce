@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta class="nav-link" charset="UTF-8" />
+    <title>Suki Ski & Board - Checkout</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/3da6cdac0d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Galdeano&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Suki</a>
+        <ul class="col-xs-4 navbar-nav mx-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Shop</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Skis</a>
+                    <a class="dropdown-item" href="#">Snowboards</a>
+                    <a class="dropdown-item" href="#">Splitboards</a>
+                </div>
+                <!-- Dropdown links here -->
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="questionnaire.html">Find My Ride</a></li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="wrapper">
+            <div class="headings">
+                <h3>Cart</h3>
+            </div>
+            <div id="cart">
+
+                <div id="order-container">
+
+                    <div id="products-cart">
+
+
+                        <div id="cart-item-image">
+                            <img src="img/Product 4.png" alt="Banana Split Splitboard">
+                        </div>
+                        <div id="cart-item-details">
+                            <h5>Banana Split Splitboard</h5>
+                            <p> Size: 156</p>
+                            <p> Colour: Blue / Black</p>
+                            <p>item-number-placeholder</p>
+                        </div>
+
+                    </div>
+
+                    <!--order-summary to display items in cart and displays order subtotal, shipping costs and total-->
+
+
+                    <div id="order-summary">
+                        <div class="headings">
+                            <h3>Summary</h3>
+                        </div>
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ul>
+                        <a href="#"> Add Promo Code</a><br>
+                        <a href="#" class="button" id="checkout"> Checkout</a>
+
+                        <!--to be updated with javascript-->
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+
+            <!--checkout-form to capture user details: name, address, contact info-->
+
+            <div id="checkout-form">
+                <div class="headings">
+                    <h3>Customer Information</h3>
+                </div>
+
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control rounded-0" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Password</label>
+                            <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control rounded-0" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control rounded-0" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control rounded-0" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4 rounded-0">
+                            <label for="inputState">Province</label>
+                            <select id="inputState" class="form-control rounded-0">
+                            <option selected>Choose...</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="AB">Alberta</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="ON">Ontario</option>
+                            <option value="QC">Quebec</option>
+                            <option value="NF">Newfoundland & Labrador</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="PEI">Prince Edward Island</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="YT">Yukon</option>
+                            <option value="NT">Nunvaut</option>
+                            <option value="NW">Northwest Territories</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Postal Code</label>
+                            <input type="text" class="form-control rounded-0" id="inputZip">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                            Same as delivery address
+                            </label>
+                        </div>
+                    </div>
+
+                </form>
+
+                <!--payment-form to capture user payment details-->
+                <div class="headings">
+                    <h3>Payment Method</h3>
+                </div>
+                <form>
+                    <div id="payment-type">
+                        <button type="button" class="btn btn-outline-secondary col-lg-5">Credit Card</button>
+                        <button type="button" class="btn btn-outline-secondary col-lg-5">PayPal</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Card Number</label>
+                        <input type="text" class="form-control rounded-0" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-lg-6">
+                            <label for="inputCardholderName">Cardholder Name</label>
+                            <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="Password">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="expiryDate">Expiry Date</label>
+                            <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="Password">
+                        </div>
+                        <div class="form-group col-lg-2">
+                            <label for="inputPassword4">CVC</label>
+                            <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                            Sign up to newsletter
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="button payment-button">Confirm and Pay</button>
+                </form>
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <!-- FOOTER content -->
+    </footer>
+
+    <!--jQuery Library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--javascript-->
+    <script src="index.js"></script>
+
+</body>
+
+</html>

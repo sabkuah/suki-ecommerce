@@ -1,23 +1,24 @@
 $color-primary: #5384A0;
 $color-secondary: #C4C4C4;
 
+
+
 $grey-background: #F6F6F6;
+
 
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Galdeano&display=swap";
-
-$font-primary: 'Roboto', sans-serif;
-$font-secondary: 'Galdeano', sans-serif;
-
+$font-primary: 'Roboto',
+sans-serif;
+$font-secondary: 'Galdeano',
+sans-serif;
 $line-height: 1.2;
 $padding: 15px;
-
-@function em($px, $bd:16){
+@function em($px, $bd:16) {
     @return #{$px / $bd}em;
 }
 
 $desktopMedium: em(1250);
-
 //Defining media query tempalates
 $screen: "only screen";
 $desktop-only: "#{$screen} and (min-width: #{$desktopMedium})"
