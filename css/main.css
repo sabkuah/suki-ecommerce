@@ -12,15 +12,21 @@ a:hover,
 a.dropdown-item:hover {
   color: #C4C4C4; }
 
-#body {
-  font-family: "Galdeano", sans-serif; }
-  #body h3 {
-    font-size: 50px;
+body {
+  font-family: "Roboto", sans-serif; }
+
+.headings {
+  border-bottom-width: 0.5px;
+  border-bottom-style: solid;
+  border-bottom-color: #7B7B7B;
+  padding-bottom: 2px;
+  margin-bottom: 10px; }
+  .headings h3 {
+    font-size: 30px;
     font-family: "Galdeano", sans-serif; }
 
 #wrapper {
-  margin: 80%;
-  width: 90%;
+  width: 70%;
   margin: 0 auto; }
 
 #order-container {
@@ -34,15 +40,15 @@ a.dropdown-item:hover {
 
 #cart-item-image {
   padding: 5%;
-  width: 300px; }
+  width: 200px; }
 
 #cart-item-details {
   padding: 10%;
-  width: 800px; }
+  width: 500px; }
 
 #order-summary {
   background-color: #F6F6F6;
-  padding: 10%;
+  padding: 5%;
   font-family: "Galdeano", sans-serif; }
 
 .button {
@@ -55,8 +61,15 @@ a.dropdown-item:hover {
   display: inline-block;
   font-size: 18px;
   text-transform: uppercase;
-  width: 300px; }
+  width: 300px;
+  justify-content: center; }
 
 /*checkout form styling*/
+#payment-type {
+  display: flex;
+  justify-content: space-around; }
+
+input[type=text]:focus {
+  background-color: #C4C4C4; }
 
 /*# sourceMappingURL=main.css.map */

@@ -37,9 +37,11 @@
 
     <main>
         <div id="wrapper">
-
-            <div id="cart">
+            <div class="headings">
                 <h3>Cart</h3>
+            </div>
+            <div id="cart">
+
                 <div id="order-container">
 
                     <div id="products-cart">
@@ -61,7 +63,9 @@
 
 
                     <div id="order-summary">
-                        <h3>Summary</h3>
+                        <div class="headings">
+                            <h3>Summary</h3>
+                        </div>
                         <ul>
                             <li>item 1</li>
                             <li>item 2</li>
@@ -74,44 +78,40 @@
                         <br><br>
                     </div>
                 </div>
-
-
-
-
             </div>
 
-
-
-
             <!--checkout-form to capture user details: name, address, contact info-->
+            <div class="headings">
+                <h3>Customer Information</h3>
+            </div>
 
             <form>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        <input type="email" class="form-control rounded-0" id="inputEmail4" placeholder="Email">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="Password">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    <input type="text" class="form-control rounded-0" id="inputAddress" placeholder="1234 Main St">
                 </div>
                 <div class="form-group">
                     <label for="inputAddress2">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    <input type="text" class="form-control rounded-0" id="inputAddress2" placeholder="Apartment, studio, or floor">
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
+                        <input type="text" class="form-control rounded-0" id="inputCity">
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-4 rounded-0">
                         <label for="inputState">Province</label>
-                        <select id="inputState" class="form-control">
+                        <select id="inputState" class="form-control rounded-0">
                       <option selected>Choose...</option>
                       <option value="BC">British Columbia</option>
                       <option value="AB">Alberta</option>
@@ -130,7 +130,7 @@
                     </div>
                     <div class="form-group col-md-2">
                         <label for="inputZip">Postal Code</label>
-                        <input type="text" class="form-control" id="inputZip">
+                        <input type="text" class="form-control rounded-0" id="inputZip">
                     </div>
                 </div>
                 <div class="form-group">
@@ -145,23 +145,30 @@
             </form>
 
             <!--payment-form to capture user payment details-->
+            <div class="headings">
+                <h3>Payment Method</h3>
+            </div>
             <form>
+                <div id="payment-type">
+                    <button type="button" class="btn btn-outline-secondary col-lg-5">Credit Card</button>
+                    <button type="button" class="btn btn-outline-secondary col-lg-5">PayPal</button>
+                </div>
                 <div class="form-group">
                     <label for="inputAddress">Card Number</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    <input type="text" class="form-control rounded-0" id="inputAddress" placeholder="1234 Main St">
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-lg-6">
                         <label for="inputCardholderName">Cardholder Name</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="Password">
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-lg-4">
                         <label for="expiryDate">Expiry Date</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="Password">
                     </div>
-                    <div class="form-group col-md-1">
+                    <div class="form-group col-lg-2">
                         <label for="inputPassword4">CVC</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="Password">
                     </div>
                 </div>
                 <div class="form-group">
@@ -173,7 +180,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Confirm and Pay</button>
+                <button type="submit" class="button payment-button">Confirm and Pay</button>
 
 
 
