@@ -1,5 +1,21 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Galdeano&display=swap";
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover, a.dropdown-item:hover {
+  color: #C4C4C4;
+}
+
 #products {
   font-size: 50px;
-  color: red; }
+  color: red;
+}
 
 /*# sourceMappingURL=main.css.map */
