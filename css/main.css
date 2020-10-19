@@ -18,4 +18,14 @@ a:hover, a.dropdown-item:hover {
   color: red;
 }
 
+.product-details {
+  background-color: #C4C4C4;
+  font-family: "Galdeano", sans-serif;
+}
+
+#tech-details {
+  margin-top: 5em;
+  padding: 10em 3em 10em 3em;
+}
+
 /*# sourceMappingURL=main.css.map */
