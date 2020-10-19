@@ -61,5 +61,9 @@ body {
 }
 
 input[type=text]:focus {
-    background-color: $color-secondary;
+    background-color: $color-lightergrey;
+}
+
+input {
+    padding-bottom: 15px;
 }

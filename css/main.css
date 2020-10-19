@@ -70,6 +70,9 @@ body {
   justify-content: space-around; }
 
 input[type=text]:focus {
-  background-color: #C4C4C4; }
+  background-color: #F6F6F6; }
+
+input {
+  padding-bottom: 15px; }
 
 /*# sourceMappingURL=main.css.map */
