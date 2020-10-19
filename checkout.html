@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta class="nav-link" charset="UTF-8" />
+    <title>Suki Ski & Board - Checkout</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/3da6cdac0d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="landing">
+            <!-- Background image -->
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">Suki</a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a>
+                        <!-- Dropdown links here -->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="questionnaire.html">Find My Ride</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <div id="wrapper">
+            <div id="order">
+                <div id="products-cart">
+                    <h3>Cart</h3>
+                    <div="cart-item">
+                        <div id="cart-item-image">
+                            <img src="img/Product 4.png" alt="Banana Split Splitboard">
+                        </div>
+                        <div id="cart-item-details">
+                            <h5>Banana Split Splitboard</h5>
+                            <p> Size: 156</p>
+                            <p> Colour: Blue / Black</p>
+                            <p>item-number-placeholder</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="order-summary">
+            <h3>Summary</h3>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+            <a href="#"> Add Promo Code</a><br>
+            <a href="#"> Continue Shopping</a>
+
+            <!--to be updated with javascript-->
+            <br><br>
+        </div>
+
+
+
+        <!--checkout-form to capture user details: name, address, contact info-->
+        <div id="checkout-form">
+            <form id="info-capture">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+
+                <label for="email">Enter your email:</label><br>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address"><br>
+
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city"><br>
+
+                <label for="province">Province:</label><br>
+                <select id="province" name="province">
+                                <option value="BC">British Columbia</option>
+                                <option value="AB">Alberta</option>
+                                <option value="SK">Saskatchewan</option>
+                                <option value="MB">Manitoba</option>
+                                <option value="ON">Ontario</option>
+                                <option value="QC">Quebec</option>
+                                <option value="NF">Newfoundland & Labrador</option>
+                                <option value="NS">Nova Scotia</option>
+                                <option value="PEI">Prince Edward Island</option>
+                                <option value="NB">New Brunswick</option>
+                                <option value="YT">Yukon</option>
+                                <option value="NT">Nunvaut</option>
+                                <option value="NW">Northwest Territories</option>
+                            </select><br><br>
+
+                <input type="checkbox" id="guest" name="guest" value="guest">
+                <label for="guest"> Check out as guest</label><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset">
+            </form>
+            <br><br>
+
+        </div>
+
+        <!--order-summary to display items in cart and displays order subtotal, shipping costs and total-->
+
+
+        <!--payment-form to capture user payment details-->
+        <div id="payment-form">
+            <form id="card-capture">
+
+                <div>
+                    <label for="creditCard">Card Number</label>
+                    <input type="text" name="creditCard" id="creditCard">
+                </div>
+
+                <div>
+                    <label for="cvv">Security Code</label>
+                    <input type="text" name="cvv" id="cvv">
+                </div>
+
+                <div>
+                    <label for="Expiration">Exp. (MM/YYYY)</label>
+                    <input type="text" name="exp-month" id="exp-month" size="2">
+                    <span> / </span>
+                    <input type="text" name="exp-year" id="exp-year" size="4">
+                </div>
+
+                <button type="submit" id="submit-button">Purchase</button>
+            </form>
+        </div>
+
+        </div>
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <!-- FOOTER content -->
+    </footer>
+    </div>
+</body>
+
+</html>
