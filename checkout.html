@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/3da6cdac0d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Galdeano&family=Roboto&display=swap" rel="stylesheet">
 
 </head>
 
@@ -33,10 +34,13 @@
 
     <main>
         <div id="wrapper">
-            <div id="order">
-                <div id="products-cart">
-                    <h3>Cart</h3>
-                    <div="cart-item">
+            <div id="cart">
+                <h3>Cart</h3>
+                <div id="order-container">
+
+                    <div id="products-cart">
+
+
                         <div id="cart-item-image">
                             <img src="img/Product 4.png" alt="Banana Split Splitboard">
                         </div>
@@ -46,48 +50,52 @@
                             <p> Colour: Blue / Black</p>
                             <p>item-number-placeholder</p>
                         </div>
+
+                    </div>
+
+                    <div id="order-summary">
+                        <h3>Summary</h3>
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ul>
+                        <a href="#"> Add Promo Code</a><br>
+                        <a href="#" class="button"> Checkout</a>
+
+                        <!--to be updated with javascript-->
+                        <br><br>
+                    </div>
                 </div>
+
+
+
+
             </div>
-        </div>
 
 
 
-        <div id="order-summary">
-            <h3>Summary</h3>
-            <ul>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-            </ul>
-            <a href="#"> Add Promo Code</a><br>
-            <a href="#"> Continue Shopping</a>
 
-            <!--to be updated with javascript-->
-            <br><br>
-        </div>
+            <!--checkout-form to capture user details: name, address, contact info-->
+            <div id="checkout-form-container">
+                <form id="info-capture">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
 
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
 
+                    <label for="email">Enter your email:</label><br>
+                    <input type="email" id="email" name="email"><br>
 
-        <!--checkout-form to capture user details: name, address, contact info-->
-        <div id="checkout-form">
-            <form id="info-capture">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address"><br>
 
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname"><br>
+                    <label for="city">City:</label><br>
+                    <input type="text" id="city" name="city"><br>
 
-                <label for="email">Enter your email:</label><br>
-                <input type="email" id="email" name="email"><br>
-
-                <label for="address">Address:</label><br>
-                <input type="text" id="address" name="address"><br>
-
-                <label for="city">City:</label><br>
-                <input type="text" id="city" name="city"><br>
-
-                <label for="province">Province:</label><br>
-                <select id="province" name="province">
+                    <label for="province">Province:</label><br>
+                    <select id="province" name="province">
                                 <option value="BC">British Columbia</option>
                                 <option value="AB">Alberta</option>
                                 <option value="SK">Saskatchewan</option>
@@ -103,45 +111,47 @@
                                 <option value="NW">Northwest Territories</option>
                             </select><br><br>
 
-                <input type="checkbox" id="guest" name="guest" value="guest">
-                <label for="guest"> Check out as guest</label><br>
+                    <input type="checkbox" id="guest" name="guest" value="guest">
+                    <label for="guest"> Check out as guest</label><br>
 
-                <input type="submit" value="Submit">
-                <input type="reset">
-            </form>
-            <br><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset">
+                </form>
+                <br><br>
 
+            </div>
+
+            <!--order-summary to display items in cart and displays order subtotal, shipping costs and total-->
+
+
+            <!--payment-form to capture user payment details-->
+            <div id="payment-form">
+                <form id="card-capture">
+
+                    <div>
+                        <label for="creditCard">Card Number</label>
+                        <input type="text" name="creditCard" id="creditCard">
+                    </div>
+
+                    <div>
+                        <label for="cvv">Security Code</label>
+                        <input type="text" name="cvv" id="cvv">
+                    </div>
+
+                    <div>
+                        <label for="Expiration">Exp. (MM/YYYY)</label>
+                        <input type="text" name="exp-month" id="exp-month" size="2">
+                        <span> / </span>
+                        <input type="text" name="exp-year" id="exp-year" size="4">
+                    </div>
+
+                    <button type="submit" id="submit-button">Purchase</button>
+                </form>
+            </div>
         </div>
 
-        <!--order-summary to display items in cart and displays order subtotal, shipping costs and total-->
 
 
-        <!--payment-form to capture user payment details-->
-        <div id="payment-form">
-            <form id="card-capture">
-
-                <div>
-                    <label for="creditCard">Card Number</label>
-                    <input type="text" name="creditCard" id="creditCard">
-                </div>
-
-                <div>
-                    <label for="cvv">Security Code</label>
-                    <input type="text" name="cvv" id="cvv">
-                </div>
-
-                <div>
-                    <label for="Expiration">Exp. (MM/YYYY)</label>
-                    <input type="text" name="exp-month" id="exp-month" size="2">
-                    <span> / </span>
-                    <input type="text" name="exp-year" id="exp-year" size="4">
-                </div>
-
-                <button type="submit" id="submit-button">Purchase</button>
-            </form>
-        </div>
-
-        </div>
 
 
 

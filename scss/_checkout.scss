@@ -1,0 +1,69 @@
+    #body {
+        font-family: $font-secondary;
+        h3 {
+            font-size: 50px;
+            font-family: $font-secondary;
+        }
+        @media screen and (max-width: 600px) {
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+        input,
+        textarea,
+        select,
+        button {
+            width: 2000px;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    }
+    
+    #wrapper {
+        margin: 80%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    #order-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #products-cart {
+        display: flex;
+        justify-content: space-between;
+        padding: 2%;
+    }
+    
+    #cart-item-image {
+        padding: 5%;
+        width: 300px;
+    }
+    
+    #cart-item-details {
+        padding: 10%;
+        width: 800px;
+    }
+    
+    #order-summary {
+        background-color: $color-lightergrey;
+        padding: 10%;
+        font-family: $font-secondary;
+    }
+    
+    .button {
+        @include blue-button;
+        width: 300px;
+    }
+    /*checkout form styling*/
+    
+    #container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }

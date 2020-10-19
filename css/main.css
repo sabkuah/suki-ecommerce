@@ -1,5 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Galdeano&display=swap";
+/*blue button for form submissions*/
 body {
   font-family: "Roboto", sans-serif; }
 
@@ -13,5 +14,70 @@ a:hover, a.dropdown-item:hover {
 #products {
   font-size: 50px;
   color: red; }
+
+#body {
+  font-family: "Galdeano", sans-serif; }
+  #body h3 {
+    font-size: 50px;
+    font-family: "Galdeano", sans-serif; }
+  @media screen and (max-width: 600px) {
+    #body .col-25,
+    #body .col-75,
+    #body input[type=submit] {
+      width: 100%;
+      margin-top: 0; } }
+  #body input,
+  #body textarea,
+  #body select,
+  #body button {
+    width: 2000px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; }
+
+#wrapper {
+  margin: 80%;
+  width: 90%;
+  margin: 0 auto; }
+
+#order-container {
+  display: flex;
+  justify-content: space-between; }
+
+#products-cart {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%; }
+
+#cart-item-image {
+  padding: 5%;
+  width: 300px; }
+
+#cart-item-details {
+  padding: 10%;
+  width: 800px; }
+
+#order-summary {
+  background-color: #F6F6F6;
+  padding: 10%;
+  font-family: "Galdeano", sans-serif; }
+
+.button {
+  background-color: #5384A0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 300px; }
+
+/*checkout form styling*/
+#container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px; }
 
 /*# sourceMappingURL=main.css.map */
