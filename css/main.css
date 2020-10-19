@@ -1,47 +1,18 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Galdeano&display=swap";
-/* letting spacing */
-form {
-  text-align: center;
-  font-family: "Galdeano", sans-serif;
-  letter-spacing: 0.12em;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 44 |     background-color: $grey-background;
+ *    |                       ^^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss/_checkout.scss 44:23  @import
+ *   scss/main.scss 7:9         root stylesheet */
 
-.q-field {
-  padding: 4em 1em;
-  height: auto;
-  border-radius: 0px;
-  background: #F6F6F6;
-  border: 1px solid #F6F6F6;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 44 \2502      background-color: $grey-background;\a    \2502                        ^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss/_checkout.scss 44:23  @import\a   scss/main.scss 7:9         root stylesheet";
 }
-.q-field:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
-
-.selected {
-  background: rgba(83, 132, 160, 0.5);
-}
-.selected:hover {
-  opacity: 1;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover, a.dropdown-item:hover {
-  color: #C4C4C4;
-}
-
-#products {
-  font-size: 50px;
-  color: red;
-}
-
-/*# sourceMappingURL=main.css.map */
