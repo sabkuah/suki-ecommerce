@@ -13,9 +13,35 @@ a:hover, a.dropdown-item:hover {
   color: #C4C4C4;
 }
 
-#products {
-  font-size: 50px;
-  color: red;
+#landing {
+  background-image: url("../img/hero-image-lg.jpg");
+  background-size: cover;
+  min-height: 800px;
+  margin-bottom: 1em;
+}
+#landing a {
+  color: white;
+}
+#landing a.dropdown-item {
+  color: black;
+}
+#landing a:hover, #landing a.dropdown-item:hover {
+  color: #C4C4C4;
+}
+
+#index-content {
+  font-family: "Galdeano", sans-serif;
+  text-align: center;
+}
+#index-content h1 {
+  font-size: 1.5em;
+}
+#index-content #products {
+  display: flex;
+  justify-content: center;
+}
+#index-content #products figcaption {
+  text-size: 1em;
 }
 
 .product-details {

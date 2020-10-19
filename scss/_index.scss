@@ -1,0 +1,35 @@
+#landing{
+    background-image: url("../img/hero-image-lg.jpg");
+    background-size: cover;
+    min-height: 800px;
+    margin-bottom: 1em;
+
+    a{
+        color: white;
+    }
+
+    a.dropdown-item {
+        color: black
+    }
+
+    a:hover, a.dropdown-item:hover {
+        color: $color-secondary;
+    }
+}
+
+#index-content {
+    font-family: $font-secondary;
+    text-align: center;
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    #products {
+        display:flex;
+        justify-content: center;
+        figcaption{
+            text-size: 1em;
+        }
+    }
+}
