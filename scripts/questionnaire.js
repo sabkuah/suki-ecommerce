@@ -9,8 +9,8 @@ function makeOption(array, id) {
   var size = 12 / array.length
   array.map(type => {
     items +=`
-    <div class="card col-sm-12 col-md-${size} col-lg-${size}">
-      <div class="card-body">
+    <div class="form-group col-sm-12 col-md-${size} col-lg-${size}">
+      <div class="form-control q-field">
         ${type}                
       </div>
     </div>`
