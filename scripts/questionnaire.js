@@ -1,5 +1,5 @@
 
-var ridingtypes = ["ALL MOUNTAIN", "PARK / FREESTYLE", "TOURING / BACKCOUNTRY", "POWDER"];
+var ridingtypes = ["All Mountain", "Park / Freestyle", "Backcountry", "Powder"];
 var ridinglevel = ["Beginner", 'Intermediate', 'Expert']
 
 //  ---------------- CREATE RIDING TYPE OPTIONS ----------------
@@ -11,7 +11,7 @@ function makeOption(array, id) {
     items +=`
     <div class="form-group col-sm-12 col-md-${size} col-lg-${size}">
       <div class="form-control q-field">
-        ${type}                
+        ${type.toUpperCase()}                
       </div>
     </div>`
   })  
@@ -20,3 +20,13 @@ function makeOption(array, id) {
 
 makeOption(ridingtypes, 'riding-type')
 makeOption(ridinglevel, 'riding-lvl')
+
+
+//  ---------------- SELECTIONS ----------------
+var skiBtn = document.getElementById('ski')
+
+skiBtn.addEventListener("click", function() {
+  console.log('clicked', skiBtn, skiBtn.className)
+  //skiBtn.style = 'selected'
+  skiBtn.className += " selected"
+})

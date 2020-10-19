@@ -1,7 +1,10 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Galdeano&display=swap";
+/* letting spacing */
 form {
   text-align: center;
+  font-family: "Galdeano", sans-serif;
+  letter-spacing: 0.12em;
 }
 
 .q-field {
@@ -13,6 +16,14 @@ form {
 }
 .q-field:hover {
   cursor: pointer;
+  opacity: 0.5;
+}
+
+.selected {
+  background: rgba(83, 132, 160, 0.5);
+}
+.selected:hover {
+  opacity: 1;
 }
 
 body {
