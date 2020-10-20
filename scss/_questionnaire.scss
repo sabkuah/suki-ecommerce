@@ -1,6 +1,8 @@
 
 form {
   text-align: center;
+  font-family: $font-secondary;
+  letter-spacing: $spacing;
 }
 
 .q-field {
@@ -11,5 +13,13 @@ form {
   border: 1px solid $grey-background;
   &:hover {
     cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+.selected {
+  background: rgba($color: $color-primary, $alpha: 0.5);
+  &:hover {
+    opacity: 1;
   }
 }
