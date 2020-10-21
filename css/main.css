@@ -129,15 +129,17 @@ d.products-container {
 .footer-top {
   background: #5384A0; }
 
-.segment-one, .segment-two, .segment-three {
-  padding-top: 35px; }
-
+/*---------------FOOTER TITLES (CustCare, Brand, Orders)----------------*/
 footer h5 {
   color: white;
   font-size: 16px;
   text-align: center;
   padding-top: 20px; }
 
+.segment-one, .segment-two, .segment-three {
+  padding-top: 35px; }
+
+/*---------------FOOTER SUBLINKS (Warr, Returns, FAQ, About, Privacy, Contact etc...----------------*/
 footer ul {
   text-align: center; }
 
@@ -156,10 +158,7 @@ footer li a:hover {
   color: #7e8a97;
   transition: 0.5s ease-in; }
 
-footer form {
-  align-items: center;
-  text-align: center; }
-
+/*---------------SOCIAL----------------*/
 .segment-four form input[type=submit] {
   background: #7e8a97;
   border: none;
@@ -188,6 +187,11 @@ footer form {
   font-size: 18px;
   color: white;
   padding: 10px 12px; }
+
+/*---------------SUBSSCRIBE FORM----------------*/
+footer form {
+  align-items: center;
+  text-align: center; }
 
 #landing {
   background-image: url("../img/hero-image-lg.png");
