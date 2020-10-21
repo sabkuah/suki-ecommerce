@@ -1,10 +1,9 @@
 $("#checkout-button").on("click", function() {
     $("#checkout-form").toggle();
-    $("#checkout-button").animate({
+    $('html,body').animate({
             scrollTop: $("#checkout-form").offset().top
         },
         'slow');
-
 });
 
 
