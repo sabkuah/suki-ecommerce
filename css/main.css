@@ -103,8 +103,9 @@ a.dropdown-item:hover {
   text-size: 1em;
 }
 
-.product-details {
+#specifications-container {
   font-family: "Galdeano", sans-serif;
+  background-color: #C4C4C4;
 }
 
 #tech-details {
