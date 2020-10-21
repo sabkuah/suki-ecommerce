@@ -1,7 +1,6 @@
 
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Galdeano&display=swap";
-<<<<<<< HEAD
 nav li a:hover {
   color: #7e8a97;
   transition: 0.5s ease-in;
@@ -25,7 +24,6 @@ nav li a:hover {
   align-self: flex-end;
   margin: -25px;
   margin-right: 0; }
-=======
 /* letting spacing */
 /*blue button for form submissions*/
 form {
@@ -52,7 +50,6 @@ form {
 .selected:hover {
   opacity: 1;
 }
->>>>>>> main
 
 body {
   font-family: "Roboto", sans-serif; }
@@ -61,7 +58,6 @@ a {
   text-decoration: none;
   color: black; }
 
-<<<<<<< HEAD
 a:hover, a.dropdown-item:hover {
   color: #C4C4C4; }
 
@@ -132,7 +128,6 @@ footer form {
 
   .footer-top {
     padding: 50px 0; } }
-=======
 a:hover,
 a.dropdown-item:hover {
   color: #C4C4C4;
@@ -213,6 +208,5 @@ input[type=text]:focus {
 input {
   padding-bottom: 15px;
 }
->>>>>>> main
 
 /*# sourceMappingURL=main.css.map */
