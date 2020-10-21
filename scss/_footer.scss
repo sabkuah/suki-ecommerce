@@ -1,0 +1,91 @@
+.footer-top{
+    background-color: #00587a;
+    color: aliceblue;
+    padding: 20px 0;
+}
+
+.segment-one, .segment-two, .segment-three {
+    padding-top: 35px;
+}
+
+footer h5 {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer li {
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+footer li a:hover {
+    color: #7e8a97;
+    transition: 0.5s ease-in;
+}
+
+footer form {
+    align-items: center;
+    text-align: center;
+}
+
+.segment-four form input[type=submit] {
+    background: #7e8a97;
+    border: none;
+    padding: 3px 15px;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.segment-four a {
+    background: #494848;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /*display: flex;*/
+}
+
+.segment-four ul{
+    display: flex;
+    padding-left: 0;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.segment-four a i {
+    font-size: 18px;
+    color: white;
+    padding: 10px 12px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .md-mb-30{
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .sm-mb-30{
+        margin-bottom: 30px;
+    }
+
+    .footer-top {
+        padding: 50px 0;
+    }
+}
