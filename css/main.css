@@ -1,138 +1,159 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Galdeano&display=swap";
-/* letting spacing */
+/* letter-spacing: $spacing */
 /*blue button for form submissions*/
-nav li a:hover {
-  color: #7e8a97;
-  transition: 0.5s ease-in;
-  text-decoration: none;
-}
-
-.flex-box {
-  display: flex;
-  width: 175px;
-  height: 275px;
-  margin: 25px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: left;
-}
-
-.image {
-  height: 100px;
-  width: 100px;
-  flex-shrink: 0;
-}
-
-.flex-box .image:nth-child(2) {
-  align-self: flex-end;
-  margin: -25px;
-  margin-right: 0;
-}
-
-.header-img {
-  background-image: url("../img/hero-image-lg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  min-height: 800px;
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.75);
-}
-
-.container > nav {
-  text-align: right;
-}
-
-.card-body {
-  border: none;
+form {
   text-align: center;
-  margin: 25px;
+  letter-spacing: 0.12em;
 }
 
-.landing {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  justify-content: center;
-  align-items: center;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover,
-a.dropdown-item:hover {
-  color: #C4C4C4;
-}
-
-#products {
-  font-size: 50px;
-  color: black;
-  font-family: "Roboto", sans-serif;
-}
-
-#products .row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#products .row > div[class*=col-] {
-  display: flex;
-}
-
-.card-title {
-  text-align: center;
-}
-
-.card {
-  border: none;
-}
-
-.sidenav {
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 20px;
-  left: 10px;
+.q-field {
+  padding: 4em 1em;
+  height: auto;
+  border-radius: 0px;
   background: #F6F6F6;
-  overflow-x: hidden;
-  padding: 8px 0;
+  border: 1px solid #F6F6F6;
+}
+.q-field:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
+.selected {
+  background: rgba(83, 132, 160, 0.5);
+}
+.selected:hover {
+  opacity: 1;
+}
+
+#specifications-container {
+  background-color: #C4C4C4;
+}
+
+#tech-details {
+  margin-top: 5em;
+  padding: 10em 3em 10em 3em;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+.headings {
+  border-bottom-width: 0.5px;
+  border-bottom-style: solid;
+  border-bottom-color: #7b7b7b;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+}
+.headings h3 {
+  font-size: 30px;
+}
+
+#wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*Order container includes bootstrap cards of items in the cart and an order summary. 
+Each card contains card-item-image and card-body (with card-item-name, card-item-details, card-item-size, card-item-quantity, cancel-item). 
+Clickable components are card-item-quantity and cancel-item*/
+#order-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#products-cart {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  width: 75%;
+}
+
+#card-item-image {
+  width: 25%;
+}
+
+.bananasplit-card {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  width: 75%;
+}
+
+#cart-item-details {
+  padding: 10%;
+  width: 75%;
+}
+
+#cancel-item {
+  position: relative;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+/*order-summary is displayed on the right with a running total of items in the cart.  Includes a checkout button that toggles checkout-form*/
+#order-summary {
+  background-color: #F6F6F6;
+  padding: 3%;
+  width: 25%;
+}
+#order-summary ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.summary-item {
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #5384A0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
   text-decoration: none;
-  font-size: 25px;
-  display: block;
+  display: inline-block;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 100%;
 }
 
-.line {
-  width: 280px;
-  height: 0px;
-  left: 70px;
-  top: 432px;
-  border: 0.5px solid #7B7B7B;
+#promo-code-field {
+  margin-bottom: 10px;
 }
 
-d.products-container {
-  margin-left: 120px;
+/*checkout form styling*/
+#payment-type {
+  display: flex;
+  justify-content: space-around;
 }
 
-.footer-top {
-  background: #5384A0;
-  padding: 20px 0;
+input[type=text]:focus {
+  background-color: #F6F6F6;
+}
+
+input {
+  padding-bottom: 15px;
 }
 
 footer {
   background-color: #5384A0;
+}
+
+.footer-top {
+  padding: 20px 0;
 }
 
 .segment-one, .segment-two, .segment-three {
@@ -232,7 +253,6 @@ footer form {
 }
 
 #index-content {
-  font-family: "Galdeano", sans-serif;
   text-align: center;
 }
 #index-content h1 {
@@ -246,159 +266,95 @@ footer form {
   font-size: 1em;
 }
 
-#specifications-container {
-  font-family: "Galdeano", sans-serif;
-  background-color: #C4C4C4;
+.card-body {
+  border: none;
+  text-align: center;
+  margin: 25px;
 }
 
-#tech-details {
-  margin-top: 5em;
-  padding: 10em 3em 10em 3em;
+#products {
+  font-size: 50px;
+  color: black;
 }
 
-.carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
+.card-title {
+  text-align: center;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
-  filter: invert(1);
+.card {
+  border: none;
+}
+
+.sidenav {
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #F6F6F6;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+}
+
+d.products-container {
+  margin-left: 120px;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
-}
-
-.headings {
-  border-bottom-width: 0.5px;
-  border-bottom-style: solid;
-  border-bottom-color: #7b7b7b;
-  padding-bottom: 2px;
-  margin-bottom: 10px;
-}
-.headings h3 {
-  font-size: 30px;
   font-family: "Galdeano", sans-serif;
 }
 
-#wrapper {
-  width: 70%;
-  margin: 0 auto;
-}
-
-/*Order container includes bootstrap cards of items in the cart and an order summary. 
-Each card contains card-item-image and card-body (with card-item-name, card-item-details, card-item-size, card-item-quantity, cancel-item). 
-Clickable components are card-item-quantity and cancel-item*/
-#order-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-#products-cart {
-  display: flex;
-  justify-content: space-between;
-  padding: 2%;
-  width: 75%;
-}
-
-#card-item-image {
-  width: 25%;
-}
-
-.bananasplit-card {
-  display: flex;
-  justify-content: center;
-  padding: 2%;
-  width: 75%;
-}
-
-#cart-item-details {
-  padding: 10%;
-  width: 75%;
-}
-
-#cancel-item {
-  position: relative;
-  top: 8px;
-  right: 16px;
-  font-size: 18px;
-}
-
-/*order-summary is displayed on the right with a running total of items in the cart.  Includes a checkout button that toggles checkout-form*/
-#order-summary {
-  background-color: #F6F6F6;
-  padding: 3%;
-  font-family: "Galdeano", sans-serif;
-  width: 25%;
-}
-
-.summary-item {
-  padding-bottom: 2px;
-  margin-bottom: 10px;
-}
-
-.button {
-  background-color: #5384A0;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
+a {
   text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  text-transform: uppercase;
-  width: 100%;
+  color: black;
 }
 
-#promo-code-field {
-  margin-bottom: 10px;
-}
-
-/*checkout form styling*/
-#payment-type {
+.flex-box {
   display: flex;
-  justify-content: space-around;
+  width: 175px;
+  height: 275px;
+  margin: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
 }
 
-input[type=text]:focus {
-  background-color: #F6F6F6;
+.image {
+  height: 100px;
+  width: 100px;
+  flex-shrink: 0;
 }
 
-input {
-  padding-bottom: 15px;
+.flex-box .image:nth-child(2) {
+  align-self: flex-end;
+  margin: -25px;
+  margin-right: 0;
 }
 
-form {
-  text-align: center;
-  font-family: "Galdeano", sans-serif;
-  letter-spacing: 0.12em;
+.header-img {
+  background-image: url("../img/hero-image-lg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 800px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.75);
 }
 
-.q-field {
-  padding: 4em 1em;
-  height: auto;
-  border-radius: 0px;
-  background: #F6F6F6;
-  border: 1px solid #F6F6F6;
-}
-.q-field:hover {
-  cursor: pointer;
-  opacity: 0.5;
+.container > nav {
+  text-align: right;
 }
 
-.selected {
-  background: rgba(83, 132, 160, 0.5);
-}
-.selected:hover {
-  opacity: 1;
+a:hover,
+a.dropdown-item:hover {
+  color: #C4C4C4;
 }
 
 /*# sourceMappingURL=main.css.map */

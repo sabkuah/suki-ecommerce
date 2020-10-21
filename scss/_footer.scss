@@ -1,10 +1,10 @@
-.footer-top{
-    background: $color-primary;
-    padding: 20px 0;
-}
 
 footer {
     background-color: $color-primary;  
+}
+
+.footer-top{
+    padding: 20px 0;
 }
 
 .segment-one, .segment-two, .segment-three {
@@ -27,6 +27,7 @@ footer li {
     text-decoration: none;
     text-align: center;
 }
+
 
 footer a {
     text-decoration: none;
