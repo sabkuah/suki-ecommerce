@@ -1,6 +1,7 @@
-
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Galdeano&display=swap";
+/* letting spacing */
+/*blue button for form submissions*/
 nav li a:hover {
   color: #7e8a97;
   transition: 0.5s ease-in;
@@ -24,32 +25,26 @@ nav li a:hover {
   align-self: flex-end;
   margin: -25px;
   margin-right: 0; }
-/* letting spacing */
-/*blue button for form submissions*/
+
 form {
   text-align: center;
   font-family: "Galdeano", sans-serif;
-  letter-spacing: 0.12em;
-}
+  letter-spacing: 0.12em; }
 
 .q-field {
   padding: 4em 1em;
   height: auto;
   border-radius: 0px;
   background: #F6F6F6;
-  border: 1px solid #F6F6F6;
-}
-.q-field:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
+  border: 1px solid #F6F6F6; }
+  .q-field:hover {
+    cursor: pointer;
+    opacity: 0.5; }
 
 .selected {
-  background: rgba(83, 132, 160, 0.5);
-}
-.selected:hover {
-  opacity: 1;
-}
+  background: rgba(83, 132, 160, 0.5); }
+  .selected:hover {
+    opacity: 1; }
 
 body {
   font-family: "Roboto", sans-serif; }
@@ -58,12 +53,9 @@ a {
   text-decoration: none;
   color: black; }
 
-a:hover, a.dropdown-item:hover {
+a:hover,
+a.dropdown-item:hover {
   color: #C4C4C4; }
-
-#products {
-  font-size: 50px;
-  color: red; }
 
 .footer-top {
   background-color: #00587a;
@@ -109,10 +101,14 @@ footer form {
   background: #494848;
   width: 40px;
   height: 40px;
-  display: inline-block;
   border-radius: 50%;
   margin-top: 5px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  /*display: flex;*/ }
+
+.segment-four ul {
+  display: flex;
+  padding-left: 0; }
 
 .segment-four a i {
   font-size: 18px;
@@ -128,58 +124,83 @@ footer form {
 
   .footer-top {
     padding: 50px 0; } }
-a:hover,
-a.dropdown-item:hover {
-  color: #C4C4C4;
-}
+#landing {
+  background-image: url("../img/hero-image-lg.jpg");
+  background-size: cover;
+  min-height: 800px;
+  margin-bottom: 1em; }
+  #landing a {
+    color: white; }
+  #landing a.dropdown-item {
+    color: black; }
+  #landing a:hover, #landing a.dropdown-item:hover {
+    color: #C4C4C4; }
+
+#index-content {
+  font-family: "Galdeano", sans-serif;
+  text-align: center; }
+  #index-content h1 {
+    font-size: 1.5em; }
+  #index-content #products {
+    display: flex;
+    justify-content: center; }
+    #index-content #products figcaption {
+      text-size: 1em; }
+
+.product-details {
+  background-color: #C4C4C4;
+  font-family: "Galdeano", sans-serif; }
+
+#tech-details {
+  margin-top: 5em;
+  padding: 10em 3em 10em 3em; }
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%; }
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  filter: invert(1); }
 
 body {
-  font-family: "Roboto", sans-serif;
-}
+  font-family: "Roboto", sans-serif; }
 
 .headings {
   border-bottom-width: 0.5px;
   border-bottom-style: solid;
   border-bottom-color: #7B7B7B;
   padding-bottom: 2px;
-  margin-bottom: 10px;
-}
-.headings h3 {
-  font-size: 30px;
-  font-family: "Galdeano", sans-serif;
-}
+  margin-bottom: 10px; }
+  .headings h3 {
+    font-size: 30px;
+    font-family: "Galdeano", sans-serif; }
 
 #wrapper {
   width: 70%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 #order-container {
   display: flex;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 #products-cart {
   display: flex;
   justify-content: space-between;
-  padding: 2%;
-}
+  padding: 2%; }
 
 #cart-item-image {
   padding: 5%;
-  width: 200px;
-}
+  width: 200px; }
 
 #cart-item-details {
   padding: 10%;
-  width: 500px;
-}
+  width: 500px; }
 
 #order-summary {
   background-color: #F6F6F6;
   padding: 5%;
-  font-family: "Galdeano", sans-serif;
-}
+  font-family: "Galdeano", sans-serif; }
 
 .button {
   background-color: #5384A0;
@@ -192,21 +213,17 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   width: 300px;
-  justify-content: center;
-}
+  justify-content: center; }
 
 /*checkout form styling*/
 #payment-type {
   display: flex;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
 
 input[type=text]:focus {
-  background-color: #F6F6F6;
-}
+  background-color: #F6F6F6; }
 
 input {
-  padding-bottom: 15px;
-}
+  padding-bottom: 15px; }
 
 /*# sourceMappingURL=main.css.map */

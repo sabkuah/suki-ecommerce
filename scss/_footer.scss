@@ -51,10 +51,15 @@ footer form {
     background: #494848;
     width: 40px;
     height: 40px;
-    display: inline-block;
     border-radius: 50%;
     margin-top: 5px;
     margin-bottom: 10px;
+    /*display: flex;*/
+}
+
+.segment-four ul{
+    display: flex;
+    padding-left: 0;
 }
 
 .segment-four a i {
