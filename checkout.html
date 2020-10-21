@@ -17,14 +17,14 @@
 
 <body>
     <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">Suki</a>
+        <a class="navbar-brand" href="index.html"><img alt="Logo" src="./img/logo.png" /></a>
         <ul class="col-xs-4 navbar-nav mx-auto">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Shop</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Skis</a>
-                    <a class="dropdown-item" href="#">Snowboards</a>
-                    <a class="dropdown-item" href="#">Splitboards</a>
+                    <a class="dropdown-item" href="products.html">Skis</a>
+                    <a class="dropdown-item" href="products.html">Snowboards</a>
+                    <a class="dropdown-item" href="products.html">Splitboards</a>
                 </div>
                 <!-- Dropdown links here -->
             </li>
@@ -34,12 +34,12 @@
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
             <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="checkout.html"><i class="fas fa-shopping-cart"></i></a></li>
         </ul>
     </nav>
 
     <main>
-        <div id="wrapper">
+        <div class="container">
             <div class="headings">
                 <h3>Cart</h3>
             </div>
@@ -61,6 +61,10 @@
                                 </div>
                                 <div id="cart-item-quantity">
                                     <i class="fas fa-plus-circle"></i>
+                                    <div class="form-group col-lg-1">
+                                        <label for="item-quantity"></label>
+                                        <input type="text" class="form-control rounded-0" id="item-quantity">
+                                    </div>
 
                                     <i class="fas fa-minus-circle"></i>
                                 </div>
@@ -211,8 +215,62 @@
 
     </main>
 
-    <footer>
-        <!-- FOOTER content -->
+    <footer class="page-footer font-small indigo">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 class="text-uppercase mt-3 mb-4">Giving Back</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">sustainability</a></li>
+                        <li><a href="#">student discount</a></li>
+                        <li><a href="#">pro program</a></li>
+                    </ul>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-3">
+                    <h5 class="text-uppercase mt-3 mb-4">Customer Care</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">warranty</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-3">
+                    <h5 class="text-uppercase mt-3 mb-4">Brand</h5>
+                    <ul class="list unstyled">
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">privacy</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-3">
+                    <h5 class="text-uppercase mt-3 mb-4">Orders</h5>
+                    <ul class="list unstyled">
+                        <li><a href="#">shipping and delivery</a></li>
+                        <li><a href="#">order tracking</a></li>
+                        <li><a href="#">returns and refunds</a></li>
+                    </ul>
+                    <div class="col-md-6 mb-4">
+                        <form class="input-group">
+                            <input type="text" class="form-control form-control-sm" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-md btn btn-light mx-2" type="button">Sign up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <section class="footer-social">
+                <ul class="footer-social-list">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </section>
+
     </footer>
 
     <!--jQuery Library-->
