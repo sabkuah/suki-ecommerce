@@ -21,6 +21,9 @@ footer ul {
 footer li {
     list-style-type: none;
     text-align: center;
+    text-decoration: none;
+    text-align: center;
+    
 }
 
 footer a {
@@ -60,6 +63,9 @@ footer form {
 .segment-four ul{
     display: flex;
     padding-left: 0;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .segment-four a i {
