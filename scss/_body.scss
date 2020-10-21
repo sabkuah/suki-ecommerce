@@ -1,7 +1,17 @@
-nav li a:hover {
-    color: #7e8a97;
-    transition: 0.5s ease-in;
+@import 'questionnaire';
+@import "details";
+@import "checkout";
+@import "footer";
+@import "index";
+@import "products_page";
+
+body {
+    font-family: $font;
+}
+
+a {
     text-decoration: none;
+    color: black;
 }
 
 .flex-box {
@@ -26,8 +36,6 @@ nav li a:hover {
     margin-right:   0;
 }
 
-@import 'questionnaire';
-
 .header-img {
     background-image: url("../img/hero-image-lg.png");
     background-position: center;
@@ -43,80 +51,12 @@ nav li a:hover {
     text-align: right;
 }
 
-.card-body {
-    border: none;
-    text-align: center;
-    margin: 25px;
-}
-
-.landing {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    justify-content: center;
-    align-items: center;
-}
-
-body{
-    font-family: $font-primary;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
 
 a:hover,
 a.dropdown-item:hover {
     color: $color-secondary;
 }
-#products {
-    font-size: 50px;
-    color: black;
-    font-family: $font-primary;
-}
 
-#products .row {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-#products .row > div[class*='col-'] {
-    display: flex;
-}
 
-.card-title {
-    text-align: center;
-}
-.card {
-    border: none;
-}
-.sidenav {
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 20px;
-    left: 10px;
-    background: #F6F6F6;
-    overflow-x: hidden;
-    padding: 8px 0;
-}
 
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    display: block;
-}
-
-.line{
-    width: 280px;
-    height: 0px;
-    left: 70px;
-    top: 432px;
-    border: 0.5px solid #7B7B7B;
-}
-d.products-container{
-    margin-left: 120px;
-}

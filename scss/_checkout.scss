@@ -1,18 +1,6 @@
-body {
-    font-family: $font-primary;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 20px;
-}
-
 .headings {
     h3 {
         font-size: 30px;
-        font-family: $font-secondary;
     }
     border-bottom-width: 0.5px;
     border-bottom-style: solid;
@@ -72,8 +60,13 @@ Clickable components are card-item-quantity and cancel-item*/
 #order-summary {
     background-color: $grey-background;
     padding: 3%;
-    font-family: $font-secondary;
     width: 25%;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
 }
 
 .summary-item {

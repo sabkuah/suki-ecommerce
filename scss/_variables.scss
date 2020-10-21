@@ -6,10 +6,8 @@ $grey-background: #F6F6F6;
 
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Galdeano&display=swap";
-
-$font-primary: 'Roboto', sans-serif;
-$font-secondary: 'Galdeano', sans-serif;
-$spacing: 0.12em; /* letting spacing */
+$font: 'Galdeano', sans-serif;
+$spacing: 0.12em; /* letter-spacing: $spacing */
 
 $line-height: 1.2;
 $padding: 15px;
