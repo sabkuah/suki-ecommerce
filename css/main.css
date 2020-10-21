@@ -126,11 +126,16 @@ a.dropdown-item:hover {
 d.products-container {
   margin-left: 120px; }
 
+footer {
+  background-color: #5384A0; }
+
 .footer-top {
   color: #5384A0;
   padding: 20px 0; }
 
-.segment-one, .segment-two, .segment-three {
+.segment-one,
+.segment-two,
+.segment-three {
   padding-top: 35px; }
 
 footer h5 {
@@ -160,7 +165,7 @@ footer form {
   align-items: center;
   text-align: center; }
 
-.segment-four form input[type=submit] {
+.segment-four form input[type="submit"] {
   background: #7e8a97;
   border: none;
   padding: 3px 15px;
@@ -236,15 +241,6 @@ footer form {
 .carousel-control-next-icon, .carousel-control-prev-icon {
   filter: invert(1); }
 
-body {
-  font-family: "Roboto", sans-serif; }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-top: 20px; }
-
 .headings {
   border-bottom-width: 0.5px;
   border-bottom-style: solid;
@@ -291,12 +287,20 @@ Clickable components are card-item-quantity and cancel-item*/
   right: 16px;
   font-size: 18px; }
 
+#products-cart .card-body {
+  text-align: left; }
+
 /*order-summary is displayed on the right with a running total of items in the cart.  Includes a checkout button that toggles checkout-form*/
 #order-summary {
   background-color: #F6F6F6;
   padding: 3%;
   font-family: "Galdeano", sans-serif;
   width: 25%; }
+  #order-summary ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px; }
 
 .summary-item {
   padding-bottom: 2px;
@@ -312,10 +316,17 @@ Clickable components are card-item-quantity and cancel-item*/
   display: inline-block;
   font-size: 18px;
   text-transform: uppercase;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 10px; }
 
 #promo-code-field {
   margin-bottom: 10px; }
+
+#cart-item-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%; }
 
 /*checkout form styling*/
 #payment-type {
