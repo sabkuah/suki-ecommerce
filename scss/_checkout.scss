@@ -44,7 +44,6 @@ Clickable components are card-item-quantity and cancel-item*/
 }
 
 #card-item-image {
-    padding: 5%;
     width: 25%;
 }
 
@@ -84,13 +83,11 @@ Clickable components are card-item-quantity and cancel-item*/
 
 .button {
     @include blue-button;
-    width: 300px;
+    width: 100%;
 }
 
-#checkout-button {
-    position: relative;
-    bottom: 8px;
-    left: 100px;
+#promo-code-field {
+    margin-bottom: 10px;
 }
 
 
