@@ -1,5 +1,7 @@
+
 @import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Galdeano&display=swap";
+<<<<<<< HEAD
 nav li a:hover {
   color: #7e8a97;
   transition: 0.5s ease-in;
@@ -23,6 +25,34 @@ nav li a:hover {
   align-self: flex-end;
   margin: -25px;
   margin-right: 0; }
+=======
+/* letting spacing */
+/*blue button for form submissions*/
+form {
+  text-align: center;
+  font-family: "Galdeano", sans-serif;
+  letter-spacing: 0.12em;
+}
+
+.q-field {
+  padding: 4em 1em;
+  height: auto;
+  border-radius: 0px;
+  background: #F6F6F6;
+  border: 1px solid #F6F6F6;
+}
+.q-field:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.selected {
+  background: rgba(83, 132, 160, 0.5);
+}
+.selected:hover {
+  opacity: 1;
+}
+>>>>>>> main
 
 body {
   font-family: "Roboto", sans-serif; }
@@ -31,6 +61,7 @@ a {
   text-decoration: none;
   color: black; }
 
+<<<<<<< HEAD
 a:hover, a.dropdown-item:hover {
   color: #C4C4C4; }
 
@@ -101,5 +132,87 @@ footer form {
 
   .footer-top {
     padding: 50px 0; } }
+=======
+a:hover,
+a.dropdown-item:hover {
+  color: #C4C4C4;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.headings {
+  border-bottom-width: 0.5px;
+  border-bottom-style: solid;
+  border-bottom-color: #7B7B7B;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+}
+.headings h3 {
+  font-size: 30px;
+  font-family: "Galdeano", sans-serif;
+}
+
+#wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#order-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#products-cart {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+#cart-item-image {
+  padding: 5%;
+  width: 200px;
+}
+
+#cart-item-details {
+  padding: 10%;
+  width: 500px;
+}
+
+#order-summary {
+  background-color: #F6F6F6;
+  padding: 5%;
+  font-family: "Galdeano", sans-serif;
+}
+
+.button {
+  background-color: #5384A0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 300px;
+  justify-content: center;
+}
+
+/*checkout form styling*/
+#payment-type {
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type=text]:focus {
+  background-color: #F6F6F6;
+}
+
+input {
+  padding-bottom: 15px;
+}
+>>>>>>> main
 
 /*# sourceMappingURL=main.css.map */
