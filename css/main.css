@@ -99,7 +99,7 @@ form {
     opacity: 1; }
 
 .header-img {
-  background-image: url("../img/hero-image-lg.png");
+  /*background-image: url("../img/hero-image-lg.png");*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -223,15 +223,6 @@ footer form {
   color: white;
   padding: 10px 12px; }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .md-mb-30 {
-    margin-bottom: 30px; } }
-@media only screen and (min-width: 767px) {
-  .sm-mb-30 {
-    margin-bottom: 30px; }
-
-  .footer-top {
-    padding: 50px 0; } }
 #landing {
   background-image: url("../img/hero-image-lg.jpg");
   background-size: cover;
