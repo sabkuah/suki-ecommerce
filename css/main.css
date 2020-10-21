@@ -147,9 +147,9 @@ footer form {
     #index-content #products figcaption {
       text-size: 1em; }
 
-.product-details {
-  background-color: #C4C4C4;
-  font-family: "Galdeano", sans-serif; }
+#specifications-container {
+  font-family: "Galdeano", sans-serif;
+  background-color: #C4C4C4; }
 
 #tech-details {
   margin-top: 5em;
@@ -166,10 +166,16 @@ footer form {
 body {
   font-family: "Roboto", sans-serif; }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px; }
+
 .headings {
   border-bottom-width: 0.5px;
   border-bottom-style: solid;
-  border-bottom-color: #7B7B7B;
+  border-bottom-color: #7b7b7b;
   padding-bottom: 2px;
   margin-bottom: 10px; }
   .headings h3 {
@@ -180,6 +186,9 @@ body {
   width: 70%;
   margin: 0 auto; }
 
+/*Order container includes bootstrap cards of items in the cart and an order summary. 
+Each card contains card-item-image and card-body (with card-item-name, card-item-details, card-item-size, card-item-quantity, cancel-item). 
+Clickable components are card-item-quantity and cancel-item*/
 #order-container {
   display: flex;
   justify-content: space-between; }
@@ -187,20 +196,39 @@ body {
 #products-cart {
   display: flex;
   justify-content: space-between;
-  padding: 2%; }
+  padding: 2%;
+  width: 75%; }
 
-#cart-item-image {
+#card-item-image {
   padding: 5%;
-  width: 200px; }
+  width: 25%; }
+
+.bananasplit-card {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  width: 75%; }
 
 #cart-item-details {
   padding: 10%;
-  width: 500px; }
+  width: 75%; }
 
+#cancel-item {
+  position: relative;
+  top: 8px;
+  right: 16px;
+  font-size: 18px; }
+
+/*order-summary is displayed on the right with a running total of items in the cart.  Includes a checkout button that toggles checkout-form*/
 #order-summary {
   background-color: #F6F6F6;
-  padding: 5%;
-  font-family: "Galdeano", sans-serif; }
+  padding: 3%;
+  font-family: "Galdeano", sans-serif;
+  width: 25%; }
+
+.summary-item {
+  padding-bottom: 2px;
+  margin-bottom: 10px; }
 
 .button {
   background-color: #5384A0;
@@ -212,15 +240,19 @@ body {
   display: inline-block;
   font-size: 18px;
   text-transform: uppercase;
-  width: 300px;
-  justify-content: center; }
+  width: 300px; }
+
+#checkout-button {
+  position: relative;
+  bottom: 8px;
+  left: 100px; }
 
 /*checkout form styling*/
 #payment-type {
   display: flex;
   justify-content: space-around; }
 
-input[type=text]:focus {
+input[type="text"]:focus {
   background-color: #F6F6F6; }
 
 input {

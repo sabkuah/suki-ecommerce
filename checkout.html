@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Galdeano&family=Roboto&display=swap" rel="stylesheet">
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 
 
 </head>
@@ -49,16 +49,26 @@
 
                     <div id="products-cart">
 
+                        <div class="bananasplit-card">
+                            <div id="card-item-image">
+                                <img src="img/Product 4.png" alt="Banana Split Splitboard">
+                            </div>
+                            <div class="card-body">
+                                <p id="card-item-name">Banana Split Splitboard</p>
+                                <div id="card-item-details">
+                                    <p id="card-item-size"> Size: 156</p>
+                                    <p id="card-item-color"> Colour: Blue / Black</p>
+                                </div>
+                                <div id="cart-item-quantity">
+                                    <i class="fas fa-plus-circle"></i>
 
-                        <div id="cart-item-image">
-                            <img src="img/Product 4.png" alt="Banana Split Splitboard">
+                                    <i class="fas fa-minus-circle"></i>
+                                </div>
+
+                            </div>
+                            <i class="fas fa-times" id="cancel-item"></i>
                         </div>
-                        <div id="cart-item-details">
-                            <h5>Banana Split Splitboard</h5>
-                            <p> Size: 156</p>
-                            <p> Colour: Blue / Black</p>
-                            <p>item-number-placeholder</p>
-                        </div>
+
 
                     </div>
 
@@ -70,18 +80,22 @@
                             <h3>Summary</h3>
                         </div>
                         <ul>
-                            <li>item 1</li>
-                            <li>item 2</li>
-                            <li>item 3</li>
+                            <li class="summary-item">Banana Split Splitboard <br> $549.00</li>
+                            <li class="summary-item">Mango Tango Surfboard <br> $329.00</li>
+                            <li>Total: </li>
                         </ul>
-                        <a href="#"> Add Promo Code</a><br>
-                        <a href="#" class="button" id="checkout"> Checkout</a>
+                        <a href="#" id="promo"> Add Promo Code</a><br>
+                        <div class="promo-code-field col-lg-12">
+                            <label for="promocode"></label>
+                            <input type="text" class="form-control rounded-0" id="promo-code-field" placeholder="insert">
+                        </div>
 
-                        <!--to be updated with javascript-->
-                        <br><br>
+                        <a href="#" class="button" id="checkout-button"> Checkout</a>
+
                     </div>
                 </div>
             </div>
+
 
             <!--checkout-form to capture user details: name, address, contact info-->
 
@@ -94,20 +108,20 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control rounded-0" id="inputEmail4" placeholder="Email">
+                            <input type="email" class="form-control rounded-0" id="inputEmail4">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputPassword4">Password</label>
-                            <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="Password">
+                            <input type="password" class="form-control rounded-0" id="inputPassword4">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputAddress">Address</label>
-                        <input type="text" class="form-control rounded-0" id="inputAddress" placeholder="1234 Main St">
+                        <input type="text" class="form-control rounded-0" id="inputAddress">
                     </div>
                     <div class="form-group">
                         <label for="inputAddress2">Address 2</label>
-                        <input type="text" class="form-control rounded-0" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        <input type="text" class="form-control rounded-0" id="inputAddress2">
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
@@ -135,7 +149,7 @@
                         </div>
                         <div class="form-group col-md-2">
                             <label for="inputZip">Postal Code</label>
-                            <input type="text" class="form-control rounded-0" id="inputZip">
+                            <input type="text" class="form-control rounded-0" id="inputPostalCode">
                         </div>
                     </div>
 
@@ -161,20 +175,20 @@
                     </div>
                     <div class="form-group">
                         <label for="inputAddress">Card Number</label>
-                        <input type="text" class="form-control rounded-0" id="inputAddress" placeholder="1234 Main St">
+                        <input type="text" class="form-control rounded-0" id="inputAddress">
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-6">
                             <label for="inputCardholderName">Cardholder Name</label>
-                            <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="Password">
+                            <input type="password" class="form-control rounded-0" id="inputPassword4">
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="expiryDate">Expiry Date</label>
-                            <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="Password">
+                            <input type="password" class="form-control rounded-0" id="inputPassword4">
                         </div>
                         <div class="form-group col-lg-2">
                             <label for="inputPassword4">CVC</label>
-                            <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="Password">
+                            <input type="password" class="form-control rounded-0" id="inputPassword4">
                         </div>
                     </div>
                     <div class="form-group">
@@ -203,6 +217,8 @@
 
     <!--jQuery Library-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!--javascript-->
     <script src="index.js"></script>

@@ -2,14 +2,21 @@ body {
     font-family: $font-primary;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
 .headings {
     h3 {
         font-size: 30px;
         font-family: $font-secondary;
     }
     border-bottom-width: 0.5px;
-    border-bottom-style:solid;
-    border-bottom-color: #7B7B7B;
+    border-bottom-style: solid;
+    border-bottom-color: #7b7b7b;
     padding-bottom: 2px;
     margin-bottom: 10px;
 }
@@ -18,6 +25,11 @@ body {
     width: 70%;
     margin: 0 auto;
 }
+
+
+/*Order container includes bootstrap cards of items in the cart and an order summary. 
+Each card contains card-item-image and card-body (with card-item-name, card-item-details, card-item-size, card-item-quantity, cancel-item). 
+Clickable components are card-item-quantity and cancel-item*/
 
 #order-container {
     display: flex;
@@ -28,28 +40,57 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 2%;
+    width: 75%;
 }
 
-#cart-item-image {
+#card-item-image {
     padding: 5%;
-    width: 200px;
+    width: 25%;
+}
+
+.bananasplit-card {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    width: 75%;
 }
 
 #cart-item-details {
     padding: 10%;
-    width: 500px;
+    width: 75%;
 }
+
+#cancel-item {
+    position: relative;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+
+/*order-summary is displayed on the right with a running total of items in the cart.  Includes a checkout button that toggles checkout-form*/
 
 #order-summary {
     background-color: $grey-background;
-    padding: 5%;
+    padding: 3%;
     font-family: $font-secondary;
+    width: 25%;
+}
+
+.summary-item {
+    padding-bottom: 2px;
+    margin-bottom: 10px;
 }
 
 .button {
     @include blue-button;
     width: 300px;
-    justify-content: center;
+}
+
+#checkout-button {
+    position: relative;
+    bottom: 8px;
+    left: 100px;
 }
 
 
@@ -60,7 +101,7 @@ body {
     justify-content: space-around;
 }
 
-input[type=text]:focus {
+input[type="text"]:focus {
     background-color: $grey-background;
 }
 
