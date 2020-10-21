@@ -1,342 +1,92 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Galdeano&display=swap";
-/* letting spacing */
-/*blue button for form submissions*/
-nav li a:hover {
-  color: #7e8a97;
-  transition: 0.5s ease-in;
-  text-decoration: none; }
+/*
+Error: Invalid CSS after "...padding: 20px 0": expected "{", was ";"
+        on line 16 of /Users/sabrina/Documents/BCIT_SSD/Front_End_Essentials /front-end-project-group-1/scss/_footer.scss
+        from line 4 of /Users/sabrina/Documents/BCIT_SSD/Front_End_Essentials /front-end-project-group-1/scss/_body.scss
+        from line 3 of /Users/sabrina/Documents/BCIT_SSD/Front_End_Essentials /front-end-project-group-1/scss/main.scss
 
-.flex-box {
-  display: flex;
-  width: 175px;
-  height: 275px;
-  margin: 25px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: left; }
+11:     background-color: $color-primary;  
+12: }
+13: 
+14: .footer-top{
+15: >>>>>>> 6b546c1fbbf7aa556bb97991bb6549c25deabdbd
+16:     padding: 20px 0;
+17: }
+18: 
+19: .segment-one,
+20: .segment-two,
+21: .segment-three {
 
-.image {
-  height: 100px;
-  width: 100px;
-  flex-shrink: 0; }
-
-.flex-box .image:nth-child(2) {
-  align-self: flex-end;
-  margin: -25px;
-  margin-right: 0; }
-
-form {
-  text-align: center;
-  font-family: "Galdeano", sans-serif;
-  letter-spacing: 0.12em; }
-
-.q-field {
-  padding: 4em 1em;
-  height: auto;
-  border-radius: 0px;
-  background: #F6F6F6;
-  border: 1px solid #F6F6F6; }
-  .q-field:hover {
-    cursor: pointer;
-    opacity: 0.5; }
-
-.selected {
-  background: rgba(83, 132, 160, 0.5); }
-  .selected:hover {
-    opacity: 1; }
-
-.header-img {
-  background-image: url("../img/hero-image-lg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  min-height: 800px;
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.75); }
-
-.container > nav {
-  text-align: right; }
-
-.card-body {
-  border: none;
-  text-align: center;
-  margin: 25px; }
-
-.landing {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  justify-content: center;
-  align-items: center; }
-
-body {
-  font-family: "Roboto", sans-serif; }
-
-a {
-  text-decoration: none;
-  color: black; }
-
-a:hover,
-a.dropdown-item:hover {
-  color: #C4C4C4; }
-
-#products {
-  font-size: 50px;
-  color: black;
-  font-family: "Roboto", sans-serif; }
-
-#products .row {
-  display: flex;
-  flex-wrap: wrap; }
-
-#products .row > div[class*='col-'] {
-  display: flex; }
-
-.card-title {
-  text-align: center; }
-
-.card {
-  border: none; }
-
-.sidenav {
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 20px;
-  left: 10px;
-  background: #F6F6F6;
-  overflow-x: hidden;
-  padding: 8px 0; }
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  display: block; }
-
-.line {
-  width: 280px;
-  height: 0px;
-  left: 70px;
-  top: 432px;
-  border: 0.5px solid #7B7B7B; }
-
-d.products-container {
-  margin-left: 120px; }
-
-footer {
-  background-color: #5384A0; }
-
-.footer-top {
-  color: #5384A0;
-  padding: 20px 0; }
-
-.segment-one,
-.segment-two,
-.segment-three {
-  padding-top: 35px; }
-
-footer h5 {
-  color: white;
-  font-size: 16px;
-  text-align: center; }
-
-footer ul {
-  text-align: center; }
-
-footer li {
-  list-style-type: none;
-  text-align: center;
-  text-decoration: none;
-  text-align: center; }
-
-footer a {
-  text-decoration: none;
-  font-size: 15px;
-  color: white; }
-
-footer li a:hover {
-  color: #7e8a97;
-  transition: 0.5s ease-in; }
-
-footer form {
-  align-items: center;
-  text-align: center; }
-
-.segment-four form input[type="submit"] {
-  background: #7e8a97;
-  border: none;
-  padding: 3px 15px;
-  text-transform: uppercase;
-  margin: 5px; }
-
-.segment-four a {
-  background: #494848;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  /*display: flex;*/ }
-
-.segment-four ul {
-  display: flex;
-  padding-left: 0;
-  border-radius: 50%;
-  margin-top: 5px;
-  margin-bottom: 10px; }
-
-.segment-four a i {
-  font-size: 18px;
-  color: white;
-  padding: 10px 12px; }
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .md-mb-30 {
-    margin-bottom: 30px; } }
-@media only screen and (min-width: 767px) {
-  .sm-mb-30 {
-    margin-bottom: 30px; }
-
-  .footer-top {
-    padding: 50px 0; } }
-#landing {
-  background-image: url("../img/hero-image-lg.png");
-  background-size: cover;
-  min-height: 800px;
-  margin-bottom: 1em; }
-  #landing a {
-    color: white; }
-  #landing a.dropdown-item {
-    color: black; }
-  #landing a:hover, #landing a.dropdown-item:hover {
-    color: #C4C4C4; }
-
-#index-content {
-  font-family: "Galdeano", sans-serif;
-  text-align: center; }
-  #index-content h1 {
-    font-size: 1.5em; }
-  #index-content #latest-products {
-    display: flex;
-    justify-content: center; }
-    #index-content #latest-products figcaption {
-      font-size: 1em; }
-
-#specifications-container {
-  font-family: "Galdeano", sans-serif;
-  background-color: #C4C4C4; }
-
-#tech-details {
-  margin-top: 5em;
-  padding: 10em 3em 10em 3em; }
-
-.carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%; }
-
-.carousel-control-next-icon, .carousel-control-prev-icon {
-  filter: invert(1); }
-
-.headings {
-  border-bottom-width: 0.5px;
-  border-bottom-style: solid;
-  border-bottom-color: #7b7b7b;
-  padding-bottom: 2px;
-  margin-bottom: 10px; }
-  .headings h3 {
-    font-size: 30px;
-    font-family: "Galdeano", sans-serif; }
-
-#wrapper {
-  width: 70%;
-  margin: 0 auto; }
-
-/*Order container includes bootstrap cards of items in the cart and an order summary. 
-Each card contains card-item-image and card-body (with card-item-name, card-item-details, card-item-size, card-item-quantity, cancel-item). 
-Clickable components are card-item-quantity and cancel-item*/
-#order-container {
-  display: flex;
-  justify-content: space-between; }
-
-#products-cart {
-  display: flex;
-  justify-content: space-between;
-  padding: 2%;
-  width: 75%; }
-
-#card-item-image {
-  width: 25%; }
-
-.bananasplit-card {
-  display: flex;
-  justify-content: center;
-  padding: 2%;
-  width: 75%; }
-
-#cart-item-details {
-  padding: 10%;
-  width: 75%; }
-
-#cancel-item {
-  position: relative;
-  top: 8px;
-  right: 16px;
-  font-size: 18px; }
-
-#products-cart .card-body {
-  text-align: left; }
-
-/*order-summary is displayed on the right with a running total of items in the cart.  Includes a checkout button that toggles checkout-form*/
-#order-summary {
-  background-color: #F6F6F6;
-  padding: 3%;
-  font-family: "Galdeano", sans-serif;
-  width: 25%; }
-  #order-summary ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 20px; }
-
-.summary-item {
-  padding-bottom: 2px;
-  margin-bottom: 10px; }
-
-.button {
-  background-color: #5384A0;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  text-transform: uppercase;
-  width: 100%;
-  margin-bottom: 10px; }
-
-#promo-code-field {
-  margin-bottom: 10px; }
-
-#cart-item-quantity {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 25%; }
-
-/*checkout form styling*/
-#payment-type {
-  display: flex;
-  justify-content: space-around; }
-
-input[type="text"]:focus {
-  background-color: #F6F6F6; }
-
-input {
-  padding-bottom: 15px; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+/Users/sabrina/Documents/BCIT_SSD/Front_End_Essentials /front-end-project-group-1/scss/_footer.scss:16
+/Users/sabrina/Documents/BCIT_SSD/Front_End_Essentials /front-end-project-group-1/scss/_body.scss:4
+/Users/sabrina/Documents/BCIT_SSD/Front_End_Essentials /front-end-project-group-1/scss/main.scss:3
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...padding: 20px 0\": expected \"{\", was \";\"\A         on line 16 of /Users/sabrina/Documents/BCIT_SSD/Front_End_Essentials /front-end-project-group-1/scss/_footer.scss\A         from line 4 of /Users/sabrina/Documents/BCIT_SSD/Front_End_Essentials /front-end-project-group-1/scss/_body.scss\A         from line 3 of /Users/sabrina/Documents/BCIT_SSD/Front_End_Essentials /front-end-project-group-1/scss/main.scss\A \A 11:     background-color: $color-primary;  \A 12: }\A 13: \A 14: .footer-top{\A 15: >>>>>>> 6b546c1fbbf7aa556bb97991bb6549c25deabdbd\A 16:     padding: 20px 0;\A 17: }\A 18: \A 19: .segment-one,\A 20: .segment-two,\A 21: .segment-three {"; }
