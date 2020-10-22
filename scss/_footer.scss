@@ -12,7 +12,8 @@ footer h5 {
     color: white;
     font-size: 16px;
     text-align: center;
-    padding-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .segment-one, .segment-two, .segment-three {
@@ -23,13 +24,13 @@ footer h5 {
 
 footer ul {
     text-align: center;
+    justify-content: center;
 }
 
 footer li {
     list-style-type: none;
     text-align: center;
     text-decoration: none;
-    text-align: center;
 }
 
 footer a {
@@ -43,15 +44,7 @@ footer li a:hover {
     transition: 0.5s ease-in;
 }
 
-/*---------------SOCIAL----------------*/
-
-.segment-four form input[type="submit"] {
-    background: #7e8a97;
-    border: none;
-    padding: 3px 15px;
-    text-transform: uppercase;
-    margin: 5px;
-}
+/*---------------SEGMENT FOUR - SOCIAL----------------*/
 
 .segment-four a {
     background: #494848;
@@ -78,9 +71,21 @@ footer li a:hover {
     padding: 10px 12px;
 }
 
-/*---------------SUBSCRIBE FORM----------------*/
+/*---------------SEGMENT FOUR - SUBSCRIBE FORM----------------*/
+
+.segment-four form input[type="submit"] {
+    background: #7e8a97;
+    border: none;
+    padding: 3px 15px;
+    text-transform: uppercase;
+    margin: 5px;
+}
 
 footer form {
     align-items: center;
     text-align: center;
+}
+
+input {
+    padding-bottom: 0px;
 }
