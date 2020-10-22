@@ -54,6 +54,12 @@ Clickable components are card-item-quantity and cancel-item*/
     font-size: 18px;
 }
 
+#products-cart {
+    .card-body {
+        text-align: left;
+    }
+}
+
 
 /*order-summary is displayed on the right with a running total of items in the cart.  Includes a checkout button that toggles checkout-form*/
 
@@ -77,10 +83,18 @@ Clickable components are card-item-quantity and cancel-item*/
 .button {
     @include blue-button;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 #promo-code-field {
     margin-bottom: 10px;
+}
+
+#cart-item-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
 }
 
 
