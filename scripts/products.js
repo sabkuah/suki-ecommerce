@@ -14,13 +14,15 @@ var itemDiv = ""
 productNames.forEach(product => {
     console.log(product.name)
     itemDiv = itemDiv + `<div class='col-sm-3'>
+    <a href="details.html" class="purchase-link">
     <div class='card'>
         <img class='card-img-top img-fluid' src=${product.image} alt='Card image cap'>
         <div class='card-block'>
             <h4 class='card-title'>${product.name}</h4>
         </div>
     </div>
-    </div>`
+    </a>
+</div>`
 })
 document.getElementById("product-row-1").innerHTML = itemDiv
 
