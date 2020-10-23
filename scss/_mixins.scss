@@ -12,3 +12,8 @@
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+
+@mixin flex-centered{
+    display: flex;
+    justify-content: center;
+}
