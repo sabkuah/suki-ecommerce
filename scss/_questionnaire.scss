@@ -25,4 +25,6 @@ form {
 
 .q-submit {
   @include blue-button;
+  width: 30%;
+  margin-bottom: 2em;
 }
