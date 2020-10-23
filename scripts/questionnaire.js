@@ -10,7 +10,7 @@ function makeOption(array, id) {
   array.map(type => {
     items +=`
     <div class="form-group col-sm-12 col-md-${size} col-lg-${size}">
-      <div class="form-control q-field">
+      <div id=${type.toLowerCase()} class="form-control q-field">
         ${type.toUpperCase()}                
       </div>
     </div>`
@@ -25,8 +25,9 @@ makeOption(ridinglevel, 'riding-lvl')
 //  ---------------- SELECTIONS ----------------
 var skiBtn = document.getElementById('ski')
 
-skiBtn.addEventListener("click", function() {
-  console.log('clicked', skiBtn, skiBtn.className)
-  //skiBtn.style = 'selected'
-  skiBtn.className += " selected"
+document.querySelectorAll('.q-field').forEach(item => {
+  console.log("item", item.id)
+  item.addEventListener('click', () => {
+    $(`div#${item.id}`).toggleClass("selected")
+  })
 })
