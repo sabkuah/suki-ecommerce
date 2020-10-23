@@ -4,11 +4,11 @@ function Product(name, image, price, type) {
     this.price = price;
     this.type = type;
 }
-let item = new Product("Banana Split", "../img/snowboard-2.jpg", 500.00, "snowboard")
+let item = new Product("Banana Split", "./img/snowboard-2.jpg", 500.00, "snowboard")
 
 
 
-var productNames = [item, { name: "skis", image: "../img/snowboard-1.png" }]
+var productNames = [item, { name: "skis", image: "./img/snowboard-1.jpg" }]
 var itemDiv = ""
 
 productNames.forEach(product => {
