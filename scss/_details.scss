@@ -16,3 +16,7 @@
 .carousel-control-next-icon, .carousel-control-prev-icon {
     filter: invert(1);
 }
+
+#adderButton {
+    @include blue-button;
+}
