@@ -56,3 +56,12 @@ document.querySelectorAll('.q-field').forEach(item => {
     })
   }
 })
+
+
+//  ---------------- FORM SUBMIT ----------------
+
+document.getElementById("qform-submit").addEventListener('click', () => {
+  document.querySelectorAll('.selected').forEach(item => {
+    console.log("items selected", item)
+  })
+})
