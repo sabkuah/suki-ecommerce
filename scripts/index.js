@@ -11,3 +11,7 @@ $("#checkout-button").on("click", function() {
 $("#promo").on("click", function() {
     $("#promo-code-field").toggle();
 });
+
+$("#filter").on("click", function() {
+    $("#sidenav-items").toggle();
+});
