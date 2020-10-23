@@ -35,7 +35,7 @@ enthusiasts, kids and families
 - checkout page [Stripe](https://stripe-payments-demo.appspot.com/)
 - messaging & endorsements [Skiis & Biikes](https://skiisandbiikes.com/)
 - sticky nav [Comor]()
-- technical details for product page [Burton](https://www.burton.com/ca/en/p/burton-family-tree-hometown-hero-camber-splitboard/W21-222401.html?cgid=womens-boards) |[Salomon](https://www.salomon.com/en-ca/shop/product/hps-annie-boulanger.html#color=22602)
+- technical details for product page [Burton](https://www.burton.com/ca/en/p/burton-family-tree-hometown-hero-camber-splitboard/W21-222401.html?cgid=womens-boards) |[Salomon](https://www.salomon.com/en-ca/shop/product/hps-annie-boulanger.html#color=22602) | [Endeavor](https://can.endeavorsnowboards.com/)
 - filter by brand logos [Evo](https://www.evo.com/shop/ski)
 
 

@@ -22,3 +22,9 @@ form {
     opacity: 1;
   }
 }
+
+.q-submit {
+  @include blue-button;
+  width: 30%;
+  margin-bottom: 2em;
+}
