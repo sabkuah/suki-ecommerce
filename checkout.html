@@ -17,26 +17,27 @@
 
 <body>
     <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="index.html"><img alt="Logo" src="./img/logo.png" /></a>
+        <a class="navbar-brand" href="index.html"><img alt="Logo" src="./img/logo-cropped.svg" width="150" height="100" /></a>
         <ul class="col-xs-4 navbar-nav mx-auto">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Shop</a>
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="products.html">Shop</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="products.html">Skis</a>
                     <a class="dropdown-item" href="products.html">Snowboards</a>
                     <a class="dropdown-item" href="products.html">Splitboards</a>
                 </div>
-                <!-- Dropdown links here -->
+                <!-- Dropdown links -->
             </li>
             <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="questionnaire.html">Find My Ride</a></li>
         </ul>
         <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a></li>
+            <li class="nav-item"><a class="nav-link disabled" href="#"><i class="fas fa-search"></i></a></li>
+            <li class="nav-item"><a class="nav-link disabled" href="#"><i class="fas fa-user-circle"></i></a></li>
             <li class="nav-item"><a class="nav-link" href="checkout.html"><i class="fas fa-shopping-cart"></i></a></li>
         </ul>
     </nav>
+
 
     <main>
         <div class="container">
@@ -49,9 +50,9 @@
 
                     <div id="products-cart">
 
-                        <div class="bananasplit-card w-100">
-                            <div id="card-item-image">
-                                <img src="img/Product 4.png" alt="Banana Split Splitboard">
+                        <div id="product-added">
+                            <!-- <div id="card-item-image">
+                                <img src="img/snowboard-1.png" alt="Banana Split Splitboard">
                             </div>
                             <div class="card-body">
                                 <p id="card-item-name">Banana Split Splitboard</p>
@@ -69,10 +70,10 @@
                                     <i class="fas fa-minus-circle"></i>
                                 </div>
 
-                            </div>
-                            <i class="fas fa-times" id="cancel-item"></i>
-                        </div>
+                            </div> -->
 
+                        </div>
+                        <i class="fas fa-times" id="cancel-item"></i>
 
                     </div>
 
@@ -86,7 +87,7 @@
                         <ul>
                             <li class="summary-item">Banana Split Splitboard <br> $549.00</li>
                             <li class="summary-item">Mango Tango Surfboard <br> $329.00</li>
-                            <li>Total: </li>
+                            <li id="totalPrice">Total: </li>
                         </ul>
                         <a href="#" id="promo"> Add Promo Code</a><br>
                         <div class="promo-code-field col-lg-12">
@@ -262,15 +263,7 @@
                     </div>
                 </div>
             </div>
-            <section class="footer-social">
-                <ul class="footer-social-list">
-                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                </ul>
-            </section>
-
+        </div>
     </footer>
 
     <!--jQuery Library-->
@@ -279,7 +272,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!--javascript-->
-    <script src="index.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/checkout.js"></script>
 
 </body>
 
