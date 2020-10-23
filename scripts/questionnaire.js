@@ -11,7 +11,7 @@ function makeOption(array, id) {
     items +=`
     <div class="form-group col-sm-12 col-md-${size} col-lg-${size}">
       <div id=${type} class="form-control q-field">
-        ${type.split('-').join(' ').toUpperCase()}                
+        ${type}                
       </div>
     </div>`
   })  
