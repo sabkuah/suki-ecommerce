@@ -26,6 +26,7 @@
 
     #latest-products {
         @include flex-centered;
+        @include flex-responsive;
         figcaption{
             font-size: 1em;
         }
@@ -34,6 +35,8 @@
 
 #image-links{
     @include flex-centered;
+    @include flex-responsive;
+
     #ski-hero, #snowboard-hero {
         min-height: 300px;
         min-width: 300px;
@@ -53,6 +56,7 @@
             width:100%;
             text-align: center;
         }
+
     }
 
     #ski-hero{

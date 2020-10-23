@@ -18,4 +18,6 @@ $padding: 15px;
 $desktopMedium: em(1250);
 //Defining media query tempalates
 $screen: "only screen";
-$desktop-only: "#{$screen} and (min-width: #{$desktopMedium})"
+$desktop-only: "#{$screen} and (min-width: #{$desktopMedium})";
+
+$desktopWidth: 992px;
