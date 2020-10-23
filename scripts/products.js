@@ -2,7 +2,7 @@ let item = new Product("Banana Split", "./img/snowboard-2.jpg", 500.00, "snowboa
 
 
 
-var productNames = [item, {name: "skis", image: "./img/snowboard-1.jpg" }]
+var productNames = [item, { name: "skis", image: "./img/snowboard-1.jpg", price: 49.00, type: "ski" }]
 var itemDiv = ""
 
 productNames.forEach(product => {

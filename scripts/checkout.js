@@ -8,7 +8,7 @@ function Product(name, image, price, type) {
 }
 
 
-var productNames = []
+var productNames = getCart()
 
 productNames.push(new Product("Banana Split", "../img/snowboard-1.png", 500.00, "snowboard"))
 
@@ -43,7 +43,7 @@ function generateCart(items) {
 
 </div>`
 
-        summary += `${item.name}  -  $${item.price.toFixed(2)}`
+        summary += `${item.name}  -  $${Number(item.price).toFixed(2)}`
     })
     document.getElementById("product-added").innerHTML = result
     document.getElementById("summary-item").innerHTML = summary
@@ -53,10 +53,10 @@ function calculateTotal(items) {
     let total = 0;
 
     items.forEach(item => {
-        total += item.price;
+        total += Number(item.price);
     })
 
-    document.getElementById("totalPrice").innerHTML = `Total: $${total.toFixed(2)}`
+    document.getElementById("totalPrice").innerHTML = `Total: $${Number(total).toFixed(2)}`
 }
 
 generateCart(productNames)
