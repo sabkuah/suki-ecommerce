@@ -5,11 +5,11 @@
     margin-bottom: 1em;
 
     a{
-        color: black;
+        color: white;
     }
 
     a.dropdown-item {
-        color: black
+        color: black;
     }
 
     a:hover, a.dropdown-item:hover {
@@ -38,12 +38,13 @@
     @include flex-responsive;
 
     #ski-hero, #snowboard-hero {
-        min-height: 300px;
-        min-width: 300px;
+        min-height: 400px;
+        min-width: 400px;
         display: flex;
         flex-flow: column-reverse;
         align-items: center;
         background-size: cover;
+        background-position: center;
         margin: 1em;
         padding: 1em 3em 1em 3em;
 
@@ -60,11 +61,11 @@
     }
 
     #ski-hero{
-        background-image: url("../img/aboutimage3.jpg")
+        background-image: url("../img/shop-snowboard-lg-cropped.jpg")
     }
 
     #snowboard-hero {
-        background-image: url("../img/aboutimage5.jpg");
+        background-image: url("../img/shop-ski-lg-cropped.jpg");
     }
 }
 
