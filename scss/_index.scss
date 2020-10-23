@@ -25,11 +25,56 @@
     }
 
     #latest-products {
-        display:flex;
-        justify-content: center;
-
+        @include flex-centered;
         figcaption{
             font-size: 1em;
         }
+    }
+}
+
+#image-links{
+    @include flex-centered;
+    #ski-hero, #snowboard-hero {
+        min-height: 300px;
+        min-width: 300px;
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: center;
+        background-size: cover;
+        margin: 1em;
+        padding: 1em 3em 1em 3em;
+
+        p {
+            // Left, right margin
+            margin: 0 1em 0 1em;
+            padding: 0.5em;
+            text-transform: uppercase;
+            background-color: $color-primary;
+            width:100%;
+            text-align: center;
+        }
+    }
+
+    #ski-hero{
+        background-image: url("../img/aboutimage3.jpg")
+    }
+
+    #snowboard-hero {
+        background-image: url("../img/aboutimage5.jpg");
+    }
+}
+
+#statement-container{
+    min-height: 500px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1em;
+    #landing-statement {
+        background-color: rgba(255,255,255,0.5);
+        min-height: 300px;
+        min-width: 300px;
+        margin-right: 15%;
+        text-align: center;
     }
 }

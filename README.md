@@ -95,7 +95,7 @@ enthusiasts, kids and families
 
 ## Wireframes/Prototypes
 
-![Stefan Products Prototype](./img/prototype/stefan-prototype.PNG)
+[Stefan Products Prototype](./img/prototype/stefan-prototype.PNG)
 
 [Rachel's prototype](https://www.figma.com/file/PL6OgS8MsxomblxNK8yh1K/Suki-Ski-Board-e-commerce-site?node-id=0%3A1)
 
