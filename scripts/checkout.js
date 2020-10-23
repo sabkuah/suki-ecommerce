@@ -43,7 +43,7 @@ function generateCart(items) {
 
 </div>`
 
-        summary += `${item.name} - $${item.price.toFixed(2)}`
+        summary += `${item.name}  -  $${item.price.toFixed(2)}`
     })
     document.getElementById("product-added").innerHTML = result
     document.getElementById("summary-item").innerHTML = summary
