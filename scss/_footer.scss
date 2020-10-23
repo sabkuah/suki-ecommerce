@@ -2,31 +2,36 @@ footer {
     background-color: $color-primary;
 }
 
-.footer-top {
-    padding: 20px 0;
+.footer-top{
+    background: $color-primary;
 }
 
-.segment-one,
-.segment-two,
-.segment-three {
-    padding-top: 35px;
-}
+/*---------------FOOTER TITLES (CustCare, Brand, Orders)----------------*/
 
 footer h5 {
     color: white;
     font-size: 16px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
+
+.segment-one, .segment-two, .segment-three {
+    padding-top: 35px;
+}
+
+/*---------------FOOTER SUBLINKS (Warr, Returns, FAQ, About, Privacy, Contact etc...----------------*/
 
 footer ul {
     text-align: center;
+    justify-content: center;
 }
 
 footer li {
     list-style-type: none;
     text-align: center;
     text-decoration: none;
-    text-align: center;
 }
 
 footer a {
@@ -36,22 +41,11 @@ footer a {
 }
 
 footer li a:hover {
-    color: #7e8a97;
-    transition: 0.5s ease-in;
+    color: #b0b0b0;
+    transition: 0.6s ease-in;
 }
 
-footer form {
-    align-items: center;
-    text-align: center;
-}
-
-.segment-four form input[type="submit"] {
-    background: #7e8a97;
-    border: none;
-    padding: 3px 15px;
-    text-transform: uppercase;
-    margin: 5px;
-}
+/*---------------SEGMENT FOUR - SOCIAL----------------*/
 
 .segment-four a {
     background: #494848;
@@ -60,12 +54,15 @@ footer form {
     border-radius: 50%;
     margin-top: 5px;
     margin-bottom: 10px;
-    /*display: flex;*/
+    display: flex;
 }
 
 .segment-four ul {
     display: flex;
     padding-left: 0;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 10px;
     justify-content: center;
 }
 
@@ -75,17 +72,24 @@ footer form {
     padding: 10px 12px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .md-mb-30 {
-        margin-bottom: 30px;
-    }
+/*---------------SEGMENT FOUR - SUBSCRIBE FORM----------------*/
+
+.segment-four form input[type="submit"] {
+    background: #7e8a97;
+    border: none;
+    padding: 3px 15px;
+    text-transform: uppercase;
+    margin: 5px;
+    padding-left: 43px;
+    padding-right: 44px;
 }
 
-@media only screen and (min-width: 767px) {
-    .sm-mb-30 {
-        margin-bottom: 30px;
-    }
-    .footer-top {
-        padding: 50px 0;
-    }
+footer form {
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+input {
+    padding-bottom: 0px;
 }
