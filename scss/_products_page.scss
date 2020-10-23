@@ -1,40 +1,40 @@
 .card-body {
-  border: none;
-  text-align: center;
-  margin: 25px;
-} 
+    border: none;
+    text-align: center;
+    margin: 25px;
+}
 
 #products {
-  font-size: 50px;
-  color: black;
+    font-size: 50px;
+    color: black;
 }
 
 .card-title {
-  text-align: center;
+    text-align: center;
 }
+
 .card {
-  border: none;
+    border: none;
 }
 
 .sidenav {
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 20px;
-  left: 10px;
-  background: #F6F6F6;
-  overflow-x: hidden;
-  padding: 8px 0;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: #F6F6F6;
+    // overflow-x: hidden;
+    padding: 8px 0;
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  display: block;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
 }
 
-
-d.products-container{
-  margin-left: 120px;
+d.products-container {
+    margin-left: 120px;
 }

@@ -12,3 +12,16 @@
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+
+@mixin flex-centered{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-responsive{
+    flex-direction: column;
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: $desktopWidth) {
+        flex-direction: row;
+    }
+}
