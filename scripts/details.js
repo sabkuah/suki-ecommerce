@@ -74,7 +74,7 @@ const fillTestData = () => {
 
 // Wait until the page is loaded before adding content to it
 document.addEventListener('DOMContentLoaded', function () {
-  fillTestData();
+  //fillTestData();
   const item = getItemFromStorage('selectedItem');
   if (item){
     document.querySelector('main').innerHTML = generateDetails(item);
