@@ -23,6 +23,10 @@ footer h5 {
 
 /*---------------FOOTER SUBLINKS (Warr, Returns, FAQ, About, Privacy, Contact etc...----------------*/
 
+.segment-one ul, .segment-two ul, .segment-three ul {
+    padding-left: 0;
+}
+
 footer ul {
     text-align: center;
     justify-content: center;
