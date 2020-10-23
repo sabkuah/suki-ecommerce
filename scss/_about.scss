@@ -26,7 +26,7 @@
 }
 
 .box1 img{
-    max-width: 1200px;
+    max-width: 90vw;
 }
 
 
@@ -56,7 +56,6 @@
     grid-row: 2;
     font-size: 1.5em;
     opacity: 70%;
-    
     align-self: center;
 }
 
@@ -64,20 +63,20 @@
 /*------------Box 5------------*/
 
 .box5 {
-    grid-column: 4 / span 6;
+    grid-column: 5;
     grid-row: 2;
 }
 
 .box5 img{
     grid-column: 3 / span 5;
     grid-row: 2;
-    max-width: 900px;
+    max-width: 90vw;
 }
 
 /*------------Box 6------------*/
 
 .box6 {
-    grid-column: 1 / span 4;
+    grid-column: 2 / span 4;
     grid-row: 3;
     justify-self: center;
 }
