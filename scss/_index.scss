@@ -26,7 +26,6 @@
 
     #latest-products {
         @include flex-centered;
-        @include flex-responsive;
         figcaption{
             font-size: 1em;
         }
@@ -44,7 +43,6 @@
         flex-flow: column-reverse;
         align-items: center;
         background-size: cover;
-        background-position: center;
         margin: 1em;
         padding: 1em 3em 1em 3em;
 
@@ -57,7 +55,6 @@
             width:100%;
             text-align: center;
         }
-
     }
 
     #ski-hero{
@@ -67,6 +64,7 @@
     #snowboard-hero {
         background-image: url("../img/shop-ski-lg-cropped.jpg");
     }
+
 }
 
 #statement-container{
