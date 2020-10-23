@@ -57,34 +57,13 @@ const generateDetails = (item) => {
           <h3>Specifications</h3>
           <div class="row">
             <div class="col-6 text-center">
-              <figure>
-                <img alt="Twin" src="https://via.placeholder.com/300x150"/>
-                <figcaption>Directional Twin</figcaption>
-              </figure>
+                <img width="400" alt="Core" src="./img/techdesimg/Core.png"/>
             </div>
             <div class="col-6 text-center">
-              <figure>
-                <img alt="Twin" src="https://via.placeholder.com/300x150"/>
-                <figcaption>Traditional Camber</figcaption>
-              </figure>
+                <img width="400" alt="Fibreglass" src="./img/techdesimg/Fibreglass.png"/>
             </div>
           </div>
-          <div class="row">
-            <div class="col-6 text-center">
-              <figure>
-                <img alt="Twin" src="https://via.placeholder.com/300x150"/>
-                <figcaption>Fiberglass Top</figcaption>
-              </figure>
-            </div>
-
-            <div class="col-6 text-center">
-              <figure>
-                <img alt="Twin" src="https://via.placeholder.com/300x150"/>
-                <figcaption>Birch Reinforcement Core</figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>`;
+       </div>`;
 };
 
 const fillTestData = () => {
