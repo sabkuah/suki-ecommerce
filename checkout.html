@@ -51,26 +51,6 @@
                     <div id="products-cart">
 
                         <div id="product-added">
-                            <!-- <div id="card-item-image">
-                                <img src="img/snowboard-1.png" alt="Banana Split Splitboard">
-                            </div>
-                            <div class="card-body">
-                                <p id="card-item-name">Banana Split Splitboard</p>
-                                <div id="card-item-details">
-                                    <p id="card-item-size"> Size: 156</p>
-                                    <p id="card-item-color"> Colour: Blue / Black</p>
-                                </div>
-                                <div id="cart-item-quantity">
-                                    <i class="fas fa-plus-circle"></i>
-
-                                    <label for="item-quantity"></label>
-                                    <input type="text" class="form-control rounded-0" id="item-quantity">
-
-
-                                    <i class="fas fa-minus-circle"></i>
-                                </div>
-
-                            </div> -->
 
                         </div>
                         <i class="fas fa-times" id="cancel-item"></i>
@@ -92,9 +72,10 @@
                             <li id="totalPrice" style="text-align:center">Total: </li>
                             <br>
 
-                            <li id="promo" style="text-align:center"> Add Promo Code</a>
-                                <label for="promocode"></label>
-                                <input type="text" class="form-control rounded-0" id="promo-code-field"></li>
+                            <a>
+                                <li id="promo" style="text-align:center"> Add Promo Code</a>
+                            <label for="promocode"></label>
+                            <input type="text" class="form-control rounded-0" id="promo-code-field"></li>
                         </ul>
 
 
@@ -202,6 +183,14 @@
 
             </div>
 
+            <div id="puchaseSuccess">
+                <img src="img/aboutimage2.jpg" class="img-fluid" alt="Responsive image">
+                <div id="purchaseMessage">
+                    <h3>Thank you for your purchase!</h3>
+                    <p>Your order is blahblah</p>
+                </div>
+            </div>
+
 
         </div>
 
@@ -264,6 +253,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!--javascript-->
+    <script src="./scripts/product.js"></script>
+    <script src="./scripts/storage.js"></script>
     <script src="./scripts/index.js"></script>
     <script src="./scripts/checkout.js"></script>
 
