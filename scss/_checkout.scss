@@ -100,18 +100,42 @@ Clickable components are card-item-quantity and cancel-item*/
     width: 25%;
 }
 
+#promoField {
+    padding-top: 0px;
+}
+
 
 /*checkout form styling*/
 
 #payment-type {
     display: flex;
     justify-content: space-around;
+    padding: 1%;
 }
 
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
     background-color: $grey-background;
 }
 
 input {
     padding-bottom: 15px;
+}
+
+
+/*purchase success message*/
+
+#purchaseSuccess {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#purchaseMessage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }

@@ -1,3 +1,5 @@
+//Products 
+
 function Product(name, image, price, type) {
     this.name = name;
     this.image = image;
@@ -8,15 +10,15 @@ function Product(name, image, price, type) {
 
 var productNames = []
 
-productNames.push(new Product("Banana Split", "../img/snowboard-2.jpg", 500.00, "snowboard"))
+productNames.push(new Product("Banana Split", "../img/snowboard-1.png", 500.00, "snowboard"))
 
-var itemDiv = ""
 
 // Cart: Add product details to cart summary on checkout page
 var itemInCart = ""
 
 function generateCart(items) {
     let result = "";
+    let summary = "";
     items.forEach(item => {
 
 
@@ -40,8 +42,11 @@ function generateCart(items) {
     </div>
 
 </div>`
+
+        summary += `${item.name}  -  $${item.price.toFixed(2)}`
     })
     document.getElementById("product-added").innerHTML = result
+    document.getElementById("summary-item").innerHTML = summary
 }
 
 function calculateTotal(items) {
