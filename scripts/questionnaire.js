@@ -64,7 +64,7 @@ var formValues = []
 $("#qform-submit").click(e => {
 
   e.preventDefault()
-    document.querySelectorAll('.selected').forEach(item => {
+  document.querySelectorAll('.selected').forEach(item => {
     console.log("items selected", item.id)
     formValues.push(item.id)
   })
@@ -74,4 +74,6 @@ $("#qform-submit").click(e => {
   formValues.push({weight})
 
   console.log("form values", formValues)
+
+  location.replace("products.html")
 })
