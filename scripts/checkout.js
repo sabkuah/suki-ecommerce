@@ -10,7 +10,7 @@ function Product(name, image, price, type) {
 
 var productNames = getCart()
 
-productNames.push(new Product("Banana Split", "../img/snowboard-1.png", 500.00, "snowboard"))
+// productNames.push(new Product("Banana Split", "../img/snowboard-1.png", 500.00, "snowboard"))
 
 
 // Cart: Add product details to cart summary on checkout page
