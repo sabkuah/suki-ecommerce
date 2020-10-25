@@ -26,10 +26,10 @@ function generateCart(items) {
     <img src=${item.image} alt=${item.name}>
 </div>
 <div class="card-body">
-    <p id="card-item-name">${item.name}</p>
+    <p id="card-item-name"><h5>${item.name}</h5></p>
     <div id="card-item-details">
-        <p id="card-item-size"> Size: 156</p>
-        <p id="card-item-color"> Colour: Blue / Black</p>
+        <p id="card-item-size"> Size: ${item.size}</p>
+        <p id="card-item-color"> Type: ${item.type}</p>
         <p id="card-item-color"> Price: ${item.price}</p>
     </div>
     <div id="cart-item-quantity">
@@ -43,7 +43,7 @@ function generateCart(items) {
 
 </div>`
 
-        summary += `${item.name}  -  $${Number(item.price).toFixed(2)}`
+        summary += `${item.name}  -  $${Number(item.price).toFixed(2)}<br>`
     })
     document.getElementById("product-added").innerHTML = result
     document.getElementById("summary-item").innerHTML = summary
