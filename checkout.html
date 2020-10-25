@@ -44,52 +44,52 @@
             <div class="headings">
                 <h3>Cart</h3>
             </div>
-            <div id="cart">
+            <div id="cart" class="row">
 
-                <div id="order-container">
 
-                    <div id="products-cart">
 
-                        <div id="product-added">
+                <div id="products-cart" class="col-xs-12 col-sm-12 col-lg-8">
 
-                        </div>
-                        <i class="fas fa-times" id="cancel-item"></i>
+                    <div id="product-added">
 
                     </div>
+                    <i class="fas fa-times" id="cancel-item"></i>
 
-                    <!--order-summary to display items in cart and displays order subtotal, shipping costs and total-->
-
-
-                    <div id="order-summary">
-                        <div class="headings">
-                            <h3>Summary</h3>
-                        </div>
-                        <ul>
-                            <li id="summary-item"></li>
-                            <br>
-                            <hr>
-                            <br>
-                            <li id="totalPrice" style="text-align:center">Total: </li>
-                            <br>
-
-                            <a>
-                                <li id="promo" style="text-align:center"> Add Promo Code</a>
-                            <label for="promocode"></label>
-                            <input type="text" class="form-control rounded-0" id="promo-code-field"></li>
-                        </ul>
-
-
-                        <a href="#" class="button" id="checkout-button"> Checkout</a>
-
-                    </div>
                 </div>
+
+                <!--order-summary to display items in cart and displays order subtotal, shipping costs and total-->
+
+
+                <div id="order-summary" class="col-xs-12 col-sm-12 col-lg-4">
+                    <div class="headings">
+                        <h3>Summary</h3>
+                    </div>
+                    <ul>
+                        <li id="summary-item"></li>
+                        <br>
+                        <hr>
+                        <br>
+                        <li id="totalPrice" style="text-align:center">Total: </li>
+                        <br>
+
+                        <a>
+                            <li id="promo" style="text-align:center"> Add Promo Code</a>
+                        <label for="promocode"></label>
+                        <input type="text" class="form-control rounded-0" id="promo-code-field"></li>
+                    </ul>
+
+
+                    <a href="#" class="button" id="checkout-button"> Checkout</a>
+
+                </div>
+
             </div>
 
 
             <!--checkout-form to capture user details: name, address, contact info-->
 
             <div id="checkout-form">
-                <div class="headings">
+                <!-- <div class="headings">
                     <h3>Customer Information</h3>
                 </div>
 
@@ -144,10 +144,10 @@
                         </div>
                     </div>
 
-                </form>
+                </form>-->
 
                 <!--payment-form to capture user payment details-->
-                <div class="headings">
+                <!-- <div class="headings">
                     <h3>Payment Method</h3>
                 </div>
                 <form>
@@ -177,19 +177,21 @@
                             </label>
                         </div>
                     </div>
-
-                    <button type="submit" class="button payment-button">Confirm and Pay</button>
-                </form>
+                <button type="submit" class="button" id="payment-button">Confirm and Pay</button>
+                    
+                </form> -->
 
             </div>
 
-            <div id="puchaseSuccess">
+            <div id="purchaseSuccess">
                 <img src="img/aboutimage2.jpg" class="img-fluid" alt="Responsive image">
                 <div id="purchaseMessage">
-                    <h3>Thank you for your purchase!</h3>
-                    <p>Your order is blahblah</p>
+                    <h4>Thank you for your purchase!</h4>
+                    <p>An order confirmation has been sent to your email address. <br><br>Please allow up to 2 business days to process and ship your order.<br>Order Number: 13524</p>
                 </div>
             </div>
+
+        </div>
 
 
         </div>
@@ -260,4 +262,4 @@
 
 </body>
 
-</html>
+</html>w
