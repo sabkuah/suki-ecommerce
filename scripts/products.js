@@ -1,8 +1,13 @@
-let item = new Product("Banana Split", "./img/snowboard-2.jpg", 500.00, "snowboard")
+let item1 = new Product("Banana Split", "./img/snowboard-1.jpg", 500.00, "Snowboard")
+let item2 = new Product("Grouse", "./img/snowboard-2.jpg", 549.00, "Snowboard")
+let item3 = new Product("Cypress", "./img/snowboard-3.jpg", 495.00, "Snowboard")
+let item4 = new Product("Whistler", "./img/ski-1.jpg", 399.00, "Skis")
+let item5 = new Product("Blackcomb", "./img/ski-2.jpg", 425.00, "Skis")
+let item6 = new Product("Seymour", "./img/ski-3.jpg", 495.00, "Skis")
 
 
 
-var productNames = [item, {name: "skis", image: "./img/snowboard-1.jpg" }]
+var productNames = [item1, item2, item3, item4, item5, item6]
 var itemDiv = ""
 
 productNames.forEach(product => {
@@ -20,12 +25,3 @@ productNames.forEach(product => {
     </div>`
 })
 document.getElementById("product-row-1").innerHTML = itemDiv
-
-
-// Cart: Add product details to cart summary on checkout page
-var itemInCart = ""
-
-
-
-
-//document.getElementById("product-added").innerHTML = itemInCart
