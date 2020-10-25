@@ -1,11 +1,11 @@
 //Products 
 
-function Product(name, image, price, type) {
-    this.name = name;
-    this.image = image;
-    this.price = price;
-    this.type = type;
-}
+// function Product(name, image, price, type) {
+//     this.name = name;
+//     this.image = image;
+//     this.price = price;
+//     this.type = type;
+// }
 
 
 var productNames = getCart()
@@ -23,7 +23,7 @@ function generateCart(items) {
 
 
         result += `<div id="card-item-image">
-    <img src=${item.image} alt=${item.name}>
+    <img src=${item.image} alt=${item.name} class="cart-item-image">
 </div>
 <div class="card-body">
     <p id="card-item-name"><h5>${item.name}</h5></p>
