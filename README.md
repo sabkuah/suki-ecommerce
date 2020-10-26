@@ -93,6 +93,10 @@ enthusiasts, kids and families
 ### sign in/register
 
 
+## Logo
+
+(./img/Logo.svg)
+
 ## Wireframes/Prototypes
 
 [Stefan Products Prototype](./img/prototype/stefan-prototype.PNG)
