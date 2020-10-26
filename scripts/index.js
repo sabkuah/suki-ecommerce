@@ -1,11 +1,3 @@
-// $("#checkout-button").on("click", function() {
-//     $("#checkout-form").toggle();
-//     $('html,body').animate({
-//             scrollTop: $("#checkout-form").offset().top
-//         },
-//         'slow');
-// });
-
 let checkoutform = `<div class="headings">
 <h3>Customer Information</h3>
 </div>
@@ -103,24 +95,26 @@ let purchaseConfirmation = `<img src="img/aboutimage2.jpg" class="img-fluid" alt
     <h4>Thank you for your purchase!</h4>
     <p>An email has been sent to your email address. <br><br>Please allow up to 2 business days to process and ship your order.<br>Order Number: 13524</p></div>`;
 
+
+// inserts and scrolls to checkout-form when checkout button clicked 
 $("#checkout-button").on("click", function() {
     document.getElementById("checkout-form").innerHTML = checkoutform;
+    //inserts and scrolls to purchase success image when confirm-pay button clicked
+    $("#confirm-pay").on("click", function() {
+        document.getElementById("purchaseSuccess").innerHTML = purchaseConfirmation;
+        //$("#purchaseSuccess").slideToggle();
+        $('html,body').animate({
+                scrollTop: $("#purchaseSuccess").offset().top
+            },
+            'slow');
+    });
     $('html,body').animate({
             scrollTop: $("#checkout-form").offset().top
         },
         'slow');
 });
 
-
+// toggles promocode field when clicked
 $("#promo").on("click", function() {
     $("#promo-code-field").toggle();
-});
-
-$("#confirm-pay").on("click", function() {
-    document.getElementById("purchaseSuccess").innerHTML = purchaseConfirmation;
-    //$("#purchaseSuccess").slideToggle();
-    $('html,body').animate({
-            scrollTop: $("#purchaseSuccess").offset().top
-        },
-        'slow');
 });

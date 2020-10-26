@@ -60,10 +60,10 @@ const generateDetails = (item) => {
           <h3>Specifications</h3>
           <div class="row">
             <div class="col-md-6 text-center">
-                <img alt="Core" src="./img/techdesimg/Core.png"/>
+                <img class="spec-image" alt="Core" src="./img/techdesimg/Core.png"/>
             </div>
             <div class="col-md-6 text-center">
-                <img alt="Fibreglass" src="./img/techdesimg/Fibreglass.png"/>
+                <img class="spec-image" alt="Fibreglass" src="./img/techdesimg/Fibreglass.png"/>
             </div>
           </div>
        </div>`;
