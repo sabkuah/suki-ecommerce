@@ -101,11 +101,15 @@ Clickable components are card-item-quantity and cancel-item*/
     margin-bottom: 10px;
 }
 
-#cart-item-quantity {
+.cart-item-quantity {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 25%;
+}
+
+.item-quantity {
+    text-align: center;
 }
 
 #promoField {
