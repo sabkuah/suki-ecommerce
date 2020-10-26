@@ -11,7 +11,7 @@ function makeOption(array, id) {
     items +=`
     <div class="form-group col-sm-12 col-md-${size} col-lg-${size}">
       <div id=${type} class="form-control q-field">
-        ${type}                
+        ${type.split('-').join(' ').toUpperCase()}                
       </div>
     </div>`
   })  
@@ -29,7 +29,7 @@ document.querySelectorAll('.q-field').forEach(item => {
   // --- Don't add selected class to height and weight
   if (item.id !== 'height' && item.id !== 'weight') {
     item.addEventListener('click', () => {
-      $(`div#${item.id}`).toggleClass("selected")
+      $(`#${item.id}`).toggleClass("selected")
       // --- find selections
       const findRidingType = ridingtypes.find(type => type === item.id)
       const findRidingLevel = ridinglevel.find(type => type === item.id)
@@ -60,8 +60,29 @@ document.querySelectorAll('.q-field').forEach(item => {
 
 //  ---------------- FORM SUBMIT ----------------
 
-document.getElementById("qform-submit").addEventListener('click', () => {
+var formValues = []
+$("#qform-submit").click(e => {
+  formValues = []
+  e.preventDefault()
   document.querySelectorAll('.selected').forEach(item => {
-    console.log("items selected", item)
+    console.log("items selected", item.id)
+    formValues.push(item.id)
   })
+  var height = $("#height-input").val()
+  var weight = $("#weight-input").val()
+  formValues.push({height})
+  formValues.push({weight})
+
+  console.log("form values", formValues)
+  if (formValues[0] !== "ski" && formValues[0] !== "snowboard") {
+    alert("Please choose ski or snowboard")
+  } else if (formValues[1] !== "all-mountain" && formValues[1] !== "park" && formValues[1] !== "backcountry" && formValues[1] !== "powder") {
+    alert("Please choose your type of riding")
+  } else if (!height || !weight ) {
+    alert("Please add in your height and weight")
+  } else if (formValues[2] !== "beginner" && formValues[2] !== "intermediate" && formValues[2] !== "expert") {
+    alert("Please choose your riding level")
+  } else {
+    location.replace("products.html")
+  }
 })
