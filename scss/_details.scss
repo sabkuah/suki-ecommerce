@@ -1,26 +1,27 @@
- #specifications-container{
-    background-color: $color-secondary;
-}
-
-#tech-details {
-    margin-top: 5em;
-    padding: 10em 3em 10em 3em;
-}
-
-.spec-image {
-    width: 300px;
-}
-
-.carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-}
-
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    filter: invert(1);
-}
-
-#adderButton {
-    @include blue-button;
-}
+ #specifications-container {
+     background-color: $grey-background;
+ }
+ 
+ #tech-details {
+     margin-top: 5em;
+     padding: 10em 3em 10em 3em;
+ }
+ 
+ .spec-image {
+     width: 300px;
+ }
+ 
+ .carousel-indicators li {
+     width: 10px;
+     height: 10px;
+     border-radius: 100%;
+ }
+ 
+ .carousel-control-next-icon,
+ .carousel-control-prev-icon {
+     filter: invert(1);
+ }
+ 
+ #adderButton {
+     @include blue-button;
+ }

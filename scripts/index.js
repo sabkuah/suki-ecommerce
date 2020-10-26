@@ -90,7 +90,7 @@ let checkoutform = `<div class="headings">
 </form>`;
 
 
-let purchaseConfirmation = `<img src="img/aboutimage2.jpg" class="img-fluid" alt="Responsive image">
+let purchaseConfirmation = `<img src="img/about-img-1-lg.jpg" class="img-fluid" alt="Responsive image">
 <div id="purchaseMessage">
     <h4>Arigatōgozaimashita!</h4>
     <p>A confirmation has been sent to your email address. <br><br>Please allow up to 2 business days to process and ship your order.<br>Order Number: 13524</p></div>`;
