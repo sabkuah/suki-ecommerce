@@ -2,7 +2,6 @@
     background-image: url("../img/hero-image-lg.png");
     background-size: cover;
     min-height: 800px;
-    margin-bottom: 1em;
 
     a{
         color: white;
@@ -26,7 +25,12 @@
 
     #latest-products {
         @include flex-centered;
+        @include flex-responsive;
+        flex-wrap: wrap;
+        align-content: center;
+
         figcaption{
+            text-align: center;
             font-size: 1em;
         }
     }
@@ -38,7 +42,7 @@
 
     #ski-hero, #snowboard-hero {
         min-height: 400px;
-        min-width: 400px;
+        min-width: 600px;
         display: flex;
         flex-flow: column-reverse;
         align-items: center;
@@ -49,12 +53,12 @@
 
         p {
             // Left, right margin
-            margin: 0 1em 0 1em;
-            padding: 0.5em;
-            text-transform: uppercase;
-            background-color: $color-primary;
+            @include blue-button;
             width:100%;
-            text-align: center;
+        }
+
+        p:hover{
+            color: $color-secondary;
         }
     }
 
@@ -74,6 +78,7 @@
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 1em;
+
     #landing-statement {
         background-color: rgba(255,255,255,0.5);
         min-height: 300px;
