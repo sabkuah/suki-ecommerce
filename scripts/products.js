@@ -9,7 +9,7 @@ let item8 = new Product("Neko", "./img/snowboard-4.jpg", 495.00, "Snowboard")
 
 
 
-var productNames = [item1, item2, item3, item4, item5, item6]
+var productNames = [item1, item2, item3, item4, item5, item6, item7, item8]
 var itemDiv = ""
 
 productNames.forEach(product => {
