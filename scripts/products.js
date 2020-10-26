@@ -33,7 +33,14 @@ function DisplayProducts(products){
     })
 document.getElementById("product-row-1").innerHTML = itemDiv
 }
-DisplayProducts (productNames)
+
 var skiList = [item5, item6, item7, item8]
 var snowboardList = [item1, item2, item3, item4]
 
+if (getCategory() === 'skis'){
+  DisplayProducts (skiList);
+} else if (getCategory() === 'snowboards'){
+  DisplayProducts(snowboardList);
+} else{
+  DisplayProducts (productNames);
+}
