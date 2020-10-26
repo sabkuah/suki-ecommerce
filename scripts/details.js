@@ -47,10 +47,10 @@ const generateDetails = (item) => {
             <div id="price">$${item.price} CAD</div>
             <br/>
             <select id="size-select" name="size" class="w-100 mb-1">
-              <option value="">CHOOSE A SIZE</option>
-              <option value="11">10</option>
-              <option value="11">11</option>
-              <option value="11">12</option>
+              <option value="149">CHOOSE A SIZE</option>
+              <option value="149">149</option>
+              <option value="150">150</option>
+              <option value="151">151</option>
             </select>
 
             <button id="adderButton" type="button" class="btn btn-primary w-100 mt-1">ADD TO CART</button>
@@ -76,6 +76,8 @@ document.addEventListener('DOMContentLoaded', function () {
   if (item){
     document.querySelector('main').innerHTML = generateDetails(item);
     const button = document.querySelector('#adderButton').addEventListener("click", () => {
+      // Add a size to the item if a size was selected by the user
+      item.size = document.getElementById('size-select').value;
       addItemToCart(item);
       showCartCount();
     });
