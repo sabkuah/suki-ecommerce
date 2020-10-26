@@ -61,3 +61,29 @@ function calculateTotal(items) {
 
 generateCart(productNames)
 calculateTotal(productNames)
+
+//Form Validation 
+
+//validates credit card numbers
+
+var re = /^(?:4[0-9]{12}(?:[0-9]{3})?)$|^(?:5[1-5][0-9]{14})$|^(?:3[47][0-9]{13})$|^(?:6(?:011|5[0-9][0-9])[0-9]{12})$/;
+
+function validateCard(cardInput) {
+    var OK = re.exec(cardInput.value);
+    if (!OK) {
+        window.alert(cardInput.value + ' is not a valid credit card number. Please try again.');
+    } else {
+        window.alert('Arigatōgozaimashita! Your card has been validated');
+    }
+};
+
+//validates email 
+
+var email = /.@./;
+
+function validateEmail(emailInput) {
+    var OK = email.exec(emailInput.value);
+    if (!OK) {
+        window.alert(emailInput.value + ' is not a valid email. Please try again.');
+    }
+};
