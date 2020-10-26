@@ -19,34 +19,43 @@ var itemInCart = ""
 function generateCart(items) {
     let result = "";
     let summary = "";
-    items.forEach(item => {
+    items.forEach((item, i) => {
 
 
-        result += `<div id="card-item-image">
-    <img src=${item.image} alt=${item.name} class="cart-item-image">
-</div>
-<div class="card-body">
-    <p id="card-item-name"><h5>${item.name}</h5></p>
-    <div id="card-item-details">
-        <p id="card-item-size"> Size: ${item.size}</p>
-        <p id="card-item-color"> Type: ${item.type}</p>
-        <p id="card-item-color"> Price: ${item.price}</p>
-    </div>
-    <div id="cart-item-quantity">
-        <i class="fas fa-plus-circle"></i>
+        result +=
+            `<div class="card-item-image">
+            <img src=${item.image} alt=${item.name} class="cart-item-image">
+        </div>
+        <div class="card-body">
+            <p class="card-item-name"><h5>${item.name}</h5></p>
+            <div class="card-item-details">
+                <p class="card-item-size"> Size: ${item.size}</p>
+                <p class="card-item-color"> Type: ${item.type}</p>
+                <p class="card-item-price"> Price: ${item.price}</p>
+            </div>
+            <div class="cart-item-quantity">
+                <i class="fas fa-plus-circle"></i>
 
-        <label for="item-quantity"></label>
-        <input type="text" class="form-control rounded-0" id="item-quantity">
+                <label for="item-quantity"></label>
+                <input type="text" class="form-control rounded-0 item-quantity" value="1" disabled>
 
-        <i class="fas fa-minus-circle"></i>
-    </div>
-
-</div>`
+                <i class="fas fa-minus-circle"></i>
+            </div>
+        </div>
+        <i class="fas fa-times cancel-item" data-value="${i}"></i>`
 
         summary += `${item.name}  -  $${Number(item.price).toFixed(2)}<br>`
     })
     document.getElementById("product-added").innerHTML = result
     document.getElementById("summary-item").innerHTML = summary
+
+    document.querySelectorAll('.cancel-item').forEach(item => {
+        item.addEventListener('click', (e) => {
+            console.log(e.target.dataset.value);
+            removeItem(e.target.dataset.value);
+        });
+
+    });
 }
 
 function calculateTotal(items) {
@@ -61,6 +70,24 @@ function calculateTotal(items) {
 
 generateCart(productNames)
 calculateTotal(productNames)
+
+//Delete item  
+// document.querySelectorAll('.cancel-item').forEach(item => {
+//     item.addEventListener('click', (e) => {
+//         console.log(e.target.dataset.value);
+//         removeItem(e.target.dataset.value);
+//     });
+
+// });
+
+function removeItem(index) {
+    productNames.splice(index, 1);
+    addItemToStorage("cart", productNames);
+    generateCart(productNames);
+    calculateTotal(productNames);
+    showCartCount();
+}
+
 
 //Form Validation 
 
