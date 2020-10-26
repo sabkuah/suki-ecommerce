@@ -5,7 +5,7 @@ let checkoutform = `<div class="headings">
 <form>
 <div class="form-row">
     <div class="form-group col-md-6">
-        <input type="email" class="form-control rounded-0" id="inputEmail4" placeholder="E-mail">
+        <input type="email" class="form-control rounded-0" id="inputEmail" placeholder="E-mail">
     </div>
     <div class="form-group col-md-6">
         <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="Password">
@@ -64,7 +64,7 @@ let checkoutform = `<div class="headings">
     <button type="button" class="btn btn-outline-secondary col-lg-5">PayPal</button>
 </div>
 <div class="form-group">
-    <input type="text" class="form-control rounded-0" id="inputAddress" placeholder="Card Number">
+    <input type="text" class="form-control rounded-0" id="inputCardNumber" placeholder="Card Number">
 </div>
 <div class="form-row">
     <div class="form-group col-lg-6">
@@ -86,14 +86,14 @@ let checkoutform = `<div class="headings">
     </div>
 </div>
 
-<button type="submit" class="button" id="confirm-pay">Confirm and Pay</button>
+<button type="submit" class="button" id="confirm-pay" onclick="validateEmail(document.getElementById('inputEmail')); validateCard(document.getElementById('inputCardNumber'));">Confirm and Pay</button>
 </form>`;
 
 
 let purchaseConfirmation = `<img src="img/aboutimage2.jpg" class="img-fluid" alt="Responsive image">
 <div id="purchaseMessage">
-    <h4>Thank you for your purchase!</h4>
-    <p>An email has been sent to your email address. <br><br>Please allow up to 2 business days to process and ship your order.<br>Order Number: 13524</p></div>`;
+    <h4>Arigatōgozaimashita!</h4>
+    <p>A confirmation has been sent to your email address. <br><br>Please allow up to 2 business days to process and ship your order.<br>Order Number: 13524</p></div>`;
 
 
 // inserts and scrolls to checkout-form when checkout button clicked 
