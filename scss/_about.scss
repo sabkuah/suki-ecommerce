@@ -4,13 +4,11 @@
     grid-template-rows: 55vh 55vh repeat(autofit);
     grid-auto-rows: minmax(240px, auto);
     grid-gap: 1em;
-    /*padding: 2em;*/
     align-items: center;
 }
 
 .about-container > div {
     background: white;
-    /*padding: 1em;*/
     text-align: center;
 }
 
@@ -29,7 +27,6 @@
     max-width: 70vw;
 }
 
-
 /*------------Box 2------------*/
 
 .box2 {
@@ -41,30 +38,6 @@
     align-self: center;
 }
 
-
-/*------------Box 3------------
-.box3 {
-    
-    grid-column: 1 / span 5;
-    grid-row: 2;
-
-    .middle-container{
-        /*min-height: 500px;
-        display:flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-bottom: 1em;
-        .middle-statement {
-            background-color: rgba(255,255,255,0.5);
-            min-height: 300px;
-            min-width: 300px;
-            margin-right: 15%;
-            text-align: center;
-            font-size: 1em;
-        }
-    }
-}
-*/
 /*------------Box 4------------*/
 
 .box4 {
@@ -89,7 +62,6 @@
         }
     }
 }
-
 
 /*------------Box 5------------*/
 
@@ -116,7 +88,6 @@
     max-width: 35vw;
 }
 
-
 /*------------Box 7------------*/
 
 .box7 {
@@ -128,9 +99,4 @@
     align-self: center;
 }
 
-/*------------Video------------*/
-
-.video-box {
-    align-items: center;
-}
-
+/*------------THE END------------*/
