@@ -84,6 +84,7 @@ $("#qform-submit").click(e => {
   } else if (formValues[2] !== "beginner" && formValues[2] !== "intermediate" && formValues[2] !== "expert") {
     alert("Please choose your riding level")
   } else {
+    setCategory(`${formValues[0]}s`)
     location.replace("products.html")
   }
 })
