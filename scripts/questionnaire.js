@@ -39,19 +39,22 @@ document.querySelectorAll('.q-field').forEach(item => {
         let array = ['ski', 'snowboard']
         let selection = array.find(type => type !== item.id)
         $(`div#${selection}`).removeClass('selected')
-        
+        $("#alert-1").addClass('d-none')
+        // document.getElementById("alert-4").classList.remove('d-none');
       } else if (findRidingType) {
         ridingtypes.forEach(type => {
           if (type !== item.id) {
             $(`div#${type}`).removeClass('selected')
           }
         })
+        $("#alert-2").addClass('d-none')
       } else if (findRidingLevel) {
         ridinglevel.forEach(type => {
           if (type !== item.id) {
             $(`div#${type}`).removeClass('selected')
           }
         })
+        $("#alert-4").addClass('d-none')
       }
     })
   }
@@ -76,14 +79,26 @@ $("#qform-submit").click(e => {
   console.log("form values", formValues)
   //  ------ form validation ------
   if (formValues[0] !== "ski" && formValues[0] !== "snowboard") {
-    alert("Please choose ski or snowboard")
+    $(`#alert-1`).removeClass('d-none')
+    $('html,body').animate({ scrollTop: $("#ski").offset().top}, 'slow');
+    return;
   } else if (formValues[1] !== "all-mountain" && formValues[1] !== "park" && formValues[1] !== "backcountry" && formValues[1] !== "powder") {
-    alert("Please choose your type of riding")
+    $(`#alert-2`).removeClass('d-none')
+    $('html,body').animate({ scrollTop: $("#riding-type").offset().top}, 'slow');
+    return;
   } else if (!height || !weight ) {
-    alert("Please add in your height and weight")
+    $(`#alert-3`).removeClass('d-none')
+    $('html,body').animate({ scrollTop: $("#height").offset().top}, 'slow');
+    return;
   } else if (formValues[2] !== "beginner" && formValues[2] !== "intermediate" && formValues[2] !== "expert") {
-    alert("Please choose your riding level")
+    $(`#alert-4`).removeClass('d-none')
+    $('html,body').animate({ scrollTop: $("#riding-lvl").offset().top}, 'slow');
+    return;
   } else {
+    let alerts = ["alert-1", "alert-2","alert-3","alert-4"] 
+    alerts.forEach(alert => {
+      $(`#${alert}`).addClass('d-none')
+    }) 
     setCategory(`${formValues[0]}s`)
     location.replace("products.html")
   }
