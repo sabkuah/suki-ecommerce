@@ -77,15 +77,17 @@ document.addEventListener('DOMContentLoaded', function () {
   if (item){
     document.querySelector('main').innerHTML = generateDetails(item);
     const button = document.querySelector('#adderButton').addEventListener('click', () => {
-      // Add a size to the item if a size was selected by the user
       const size = document.getElementById('size-select').value;
+      // If they didnt choose anything just show the error div and exit
       if (!size){
         document.getElementById("alert").classList.remove('d-none');
         return;
       }
 
+      // Hide the error div if the selection is valid
       document.getElementById("alert").classList.add('d-none');
 
+      // Update sessionstorage and display the updated count
       addItemToCart(item);
       showCartCount();
     });
