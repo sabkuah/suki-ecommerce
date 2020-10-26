@@ -4,6 +4,8 @@ let item3 = new Product("Cypress", "./img/snowboard-3.jpg", 495.00, "Snowboard")
 let item4 = new Product("Whistler", "./img/ski-1.jpg", 399.00, "Skis")
 let item5 = new Product("Blackcomb", "./img/ski-2.jpg", 425.00, "Skis")
 let item6 = new Product("Seymour", "./img/ski-3.jpg", 495.00, "Skis")
+let item7 = new Product("Sugoi", "./img/ski-4.jpg", 495.00, "Skis")
+let item8 = new Product("Neko", "./img/snowboard-4.jpg", 495.00, "Snowboard")
 
 
 
