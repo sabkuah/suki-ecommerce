@@ -24,9 +24,9 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="products.html">Shop</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="products.html">Skis</a>
-              <a class="dropdown-item" href="products.html">Snowboards</a>
-              <a class="dropdown-item" href="products.html">Splitboards</a>
+              <a class="dropdown-item" href="products.html" onclick="setCategory('skis')">Skis</a>
+              <a class="dropdown-item" href="products.html" onclick="setCategory('snowboards')">Snowboards</a>
+              <a class="dropdown-item" href="products.html" onclick="setCategory('all')">All</a>
             </div>
             <!-- Dropdown links -->
           </li>
@@ -43,8 +43,8 @@
 
     <!-- MAIN STORE LINKS -->
     <div id="image-links">
-      <a href="products.html"><div id="snowboard-hero"><p>Shop Skis</p></div></a>
-      <a href="products.html"><div id="ski-hero"><p>Shop Snowboards</p></div></a>
+      <a href="products.html" onclick="setCategory('skis')"><div id="snowboard-hero"><p>Shop Skis</p></div></a>
+      <a href="products.html" onclick="setCategory('snowboards')"><div id="ski-hero"><p>Shop Snowboards</p></div></a>
     </div>
 
     <!-- Parallax Div -->

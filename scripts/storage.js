@@ -62,7 +62,20 @@ const showCartCount = () => {
 
   // Hide the item if there are no items
   cartCountElem.classList.add('d-none');
+};
 
+const getCategory = () => {
+  const category = getItemFromStorage('category');
+
+  if (category){
+    return category;
+  }
+
+  return "";
+};
+
+const setCategory = (category) => {
+  addItemToStorage('category', category);
 };
 
 // Wait until the page loads
