@@ -20,33 +20,29 @@ function generateCart(items) {
     let result = "";
     let summary = "";
     items.forEach((item, i) => {
-
-
         result +=
-            `<div class="card-item-image">
+        `<div class="product-added">
             <img src=${item.image} alt=${item.name} class="cart-item-image">
-        </div>
-        <div class="card-body">
-            <p class="card-item-name"><h5>${item.name}</h5></p>
-            <div class="card-item-details">
-                <p class="card-item-size"> Size: ${item.size}</p>
-                <p class="card-item-color"> Type: ${item.type}</p>
-                <p class="card-item-price"> Price: ${item.price}</p>
+            <div class="card-body">
+                <p class="card-item-name"><h5>${item.name}</h5></p>
+                <div class="card-item-details">
+                    <p> Size: ${item.size}</p>
+                    <p> Type: ${item.type}</p>
+                    <p> Price: ${item.price}</p>
+                </div>
+                <div class="cart-item-quantity">
+                    <i class="fas fa-plus-circle"></i>
+                    <label for="item-quantity"></label>
+                    <input type="text" class="form-control rounded-0 item-quantity" value="1" disabled>
+                    <i class="fas fa-minus-circle"></i>
+                </div>
             </div>
-            <div class="cart-item-quantity">
-                <i class="fas fa-plus-circle"></i>
-
-                <label for="item-quantity"></label>
-                <input type="text" class="form-control rounded-0 item-quantity" value="1" disabled>
-
-                <i class="fas fa-minus-circle"></i>
-            </div>
-        </div>
-        <i class="fas fa-times cancel-item" data-value="${i}"></i>`
+            <i class="fas fa-times cancel-item" data-value="${i}"></i>
+        </div>`
 
         summary += `${item.name}  -  $${Number(item.price).toFixed(2)}<br>`
     })
-    document.getElementById("product-added").innerHTML = result
+    document.getElementById("products-cart").innerHTML = result
     document.getElementById("summary-item").innerHTML = summary
 
     document.querySelectorAll('.cancel-item').forEach(item => {

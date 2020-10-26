@@ -28,24 +28,18 @@ Clickable components are card-item-quantity and cancel-item*/
     display: flex;
     justify-content: space-between;
     padding: 2%;
-    width: 75%;
-}
-
-#product-added {
-    display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.cart-item-image {
-    width: 15rem;
+.product-added {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.bananasplit-card {
-    display: flex;
-    justify-content: center;
-    padding: 2%;
-    width: 75%;
+.cart-item-image {
+    width: 40%;//15rem;
 }
 
 #cart-item-details {
@@ -63,7 +57,7 @@ Clickable components are card-item-quantity and cancel-item*/
 #products-cart {
     .card-body {
         text-align: left;
-        width: 25rem;
+        // width: 25rem;
     }
 }
 
@@ -73,7 +67,7 @@ Clickable components are card-item-quantity and cancel-item*/
 #order-summary {
     background-color: $grey-background;
     padding: 3%;
-    width: 25%;
+    // width: 25%;
     ul {
         list-style-type: none;
         margin: 0;
