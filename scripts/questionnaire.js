@@ -62,7 +62,7 @@ document.querySelectorAll('.q-field').forEach(item => {
 
 var formValues = []
 $("#qform-submit").click(e => {
-
+  formValues = []
   e.preventDefault()
   document.querySelectorAll('.selected').forEach(item => {
     console.log("items selected", item.id)
@@ -74,6 +74,16 @@ $("#qform-submit").click(e => {
   formValues.push({weight})
 
   console.log("form values", formValues)
-
-  location.replace("products.html")
+  if (formValues[0] !== "ski" && formValues[0] !== "snowboard") {
+    // if (!formValues[0].includes("ski", "snowboard" )) {
+    alert("Please choose ski or snowboard")
+  } else if (formValues[1] !== "powder") {
+    alert("Please choose your type of riding")
+  } else if (!height || !weight ) {
+    alert("Please add in your height and weight")
+  } else if (!height || !weight ) {
+    alert("Please choose your riding level")
+  } else {
+    location.replace("products.html")
+  }
 })
