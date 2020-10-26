@@ -47,12 +47,13 @@ const generateDetails = (item) => {
             <div id="price">$${item.price} CAD</div>
             <br/>
             <select id="size-select" name="size" class="w-100 mb-1">
-              <option value="149">CHOOSE A SIZE</option>
+              <option value="">CHOOSE A SIZE</option>
               <option value="149">149</option>
               <option value="150">150</option>
               <option value="151">151</option>
             </select>
 
+            <p id="alert" class="alert alert-danger d-none mt-1 mb-1">Please choose a valid size</p>
             <button id="adderButton" type="button" class="btn btn-primary w-100 mt-1">ADD TO CART</button>
           </div>
         </div>
@@ -75,9 +76,19 @@ document.addEventListener('DOMContentLoaded', function () {
   const item = getItemFromStorage('selectedItem');
   if (item){
     document.querySelector('main').innerHTML = generateDetails(item);
-    const button = document.querySelector('#adderButton').addEventListener("click", () => {
-      // Add a size to the item if a size was selected by the user
-      item.size = document.getElementById('size-select').value;
+    const button = document.querySelector('#adderButton').addEventListener('click', () => {
+      const size = document.getElementById('size-select').value;
+      // If they didnt choose anything just show the error div and exit
+      if (!size){
+        document.getElementById("alert").classList.remove('d-none');
+        return;
+      }
+
+      // Hide the error div if the selection is valid
+      document.getElementById("alert").classList.add('d-none');
+
+      // Update sessionstorage and display the updated count
+      item.size = size;
       addItemToCart(item);
       showCartCount();
     });

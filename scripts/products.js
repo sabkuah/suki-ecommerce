@@ -13,18 +13,27 @@ let item8 = new Product("Sugoi", "./img/ski-4.jpg", 495.00, "Skis")
 var productNames = [item1, item2, item3, item4, item5, item6, item7, item8]
 var itemDiv = ""
 
-productNames.forEach(product => {
-    console.log(product.name)
-    itemDiv = itemDiv + `<div class='col-sm-3'>
-    <a href="details.html" class="purchase-link" onclick="
-        addItemToStorage('selectedItem', new Product('${product.name}', '${product.image}', '${product.price}', '${product.type}'));">
-        <div class='card'>
-            <img class='card-img-top img-fluid' src=${product.image} alt='Card image cap'>
-            <div class='card-block'>
-                <h4 class='card-title'>${product.name}</h4>
+
+
+function DisplayProducts(products){
+    var itemDiv = ""
+    products.forEach(product => {
+        console.log(product.name)
+        itemDiv = itemDiv + `<div class='col-sm-3'>
+        <a href="details.html" class="purchase-link" onclick="
+            addItemToStorage('selectedItem', new Product('${product.name}', '${product.image}', '${product.price}', '${product.type}'));">
+            <div class='card'>
+                <img class='card-img-top img-fluid' src=${product.image} alt='Card image cap'>
+                <div class='card-block'>
+                    <h4 class='card-title'>${product.name}</h4>
+                </div>
             </div>
-        </div>
-        </a>
-    </div>`
-})
+            </a>
+        </div>`
+    })
 document.getElementById("product-row-1").innerHTML = itemDiv
+}
+DisplayProducts (productNames)
+var skiList = [item5, item6, item7, item8]
+var snowboardList = [item1, item2, item3, item4]
+
