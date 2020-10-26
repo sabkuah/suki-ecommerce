@@ -56,10 +56,10 @@ const generateDetails = (item) => {
         <div class="container pt-1 mt-4 text-center" id="specifications-container">
           <h3>Specifications</h3>
           <div class="row">
-            <div class="col-6 text-center">
+            <div class="col-md-6 text-center">
                 <img width="400" alt="Core" src="./img/techdesimg/Core.png"/>
             </div>
-            <div class="col-6 text-center">
+            <div class="col-md-6 text-center">
                 <img width="400" alt="Fibreglass" src="./img/techdesimg/Fibreglass.png"/>
             </div>
           </div>
