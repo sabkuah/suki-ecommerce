@@ -36,4 +36,36 @@ const addItemToCart = (item) => {
     addItemToStorage('cart', cart);
 };
 
-//clearCart();
+const getCartCount = () => {
+  const cart = getCart();
+  if (cart.length > 0) {
+    return cart.length;
+  }
+  return 0;
+};
+
+const showCartCount = () => {
+  const cartCountElem = document.getElementById('cart-count');
+
+  if (!cartCountElem){
+    return;
+  }
+
+  const count = getCartCount();
+
+  if (count){
+    // Display the item
+    cartCountElem.classList.remove('d-none');
+    cartCountElem.innerText = count;
+    return;
+  }
+
+  // Hide the item if there are no items
+  cartCountElem.classList.add('d-none');
+
+};
+
+// Wait until the page loads
+document.addEventListener('DOMContentLoaded', () => {
+  showCartCount();
+});
