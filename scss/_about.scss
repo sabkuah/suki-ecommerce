@@ -4,13 +4,13 @@
     grid-template-rows: 55vh 55vh repeat(autofit);
     grid-auto-rows: minmax(240px, auto);
     grid-gap: 1em;
-    padding: 2em;
+    /*padding: 2em;*/
     align-items: center;
 }
 
 .about-container > div {
     background: white;
-    padding: 1em;
+    /*padding: 1em;*/
     text-align: center;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .box1 img{
-    max-width: 90vw;
+    max-width: 70vw;
 }
 
 
@@ -113,7 +113,7 @@
 }
 
 .box6 img{
-    max-width: 800px;
+    max-width: 35vw;
 }
 
 
