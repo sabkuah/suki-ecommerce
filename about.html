@@ -16,16 +16,16 @@
   </head>
   <body>
       
-        <!-- Copied from _nav.html -->
+        <!--Navigation -->
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="index.html"><img alt="Logo" src="./img/logo-cropped.svg" width="150" height="100"/></a>
           <ul class="col-xs-4 navbar-nav mx-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="products.html">Shop</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="products.html">Skis</a>
-                <a class="dropdown-item" href="products.html">Snowboards</a>
-                <a class="dropdown-item" href="products.html">Splitboards</a>
+                <a class="dropdown-item" href="products.html" onclick="setCategory('skis')">Skis</a>
+                <a class="dropdown-item" href="products.html" onclick="setCategory('snowboards')">Snowboards</a>
+                <a class="dropdown-item" href="products.html" onclick="setCategory('all')">All</a>
               </div>
               <!-- Dropdown links -->
             </li>
@@ -38,9 +38,10 @@
             <li class="nav-item"><a class="nav-link" href="checkout.html"><i id="cart" class="fas fa-shopping-cart"></i><span id="cart-count">12</span></a></li>
           </ul>
         </nav>
+      </div>
         
       
-      
+        <!--About Suki-->
         <div class="about-container">
           <div class="box box1"><img src="img/about-img-1-lg.jpg"></div>
           <div class="box box2">The story of Suki began in the mountains of Hokkaido, <br> <br>Japan's northernmost island. Known for its volcanoes, onsens (natural hot springs), and ski areas, it would only seem fitting that Suki would come to fruition here. <br> <br> At Japan's number one Ski Resort, Niseko, Suki skis and snowboards seem to be the brand of choice. And for a good reason.<br></div>
