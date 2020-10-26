@@ -11,106 +11,88 @@
   </head>
   <body>
     <div class="container">
-       <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="index.html"><img alt="Logo" src="./img/logo-cropped.svg" width="150" height="100"/></a>
-          <ul class="col-xs-4 navbar-nav mx-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="products.html">Shop</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="products.html">Skis</a>
-                <a class="dropdown-item" href="products.html">Snowboards</a>
-                <a class="dropdown-item" href="products.html">Splitboards</a>
-              </div>
-              <!-- Dropdown links -->
-            </li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="questionnaire.html">Find My Ride</a></li>
-          </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link disabled" href="#"><i class="fas fa-search"></i></a></li>
-            <li class="nav-item"><a class="nav-link disabled" href="#"><i class="fas fa-user-circle"></i></a></li>
-            <li class="nav-item"><a class="nav-link" href="checkout.html"><i id="cart" class="fas fa-shopping-cart"></i><span id="cart-count">12</span></a></li>
-          </ul>
-        </nav>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html"><img alt="Logo" src="./img/logo-cropped.svg" width="150" height="100"/></a>
+        <ul class="col-xs-4 navbar-nav mx-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="products.html">Shop</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="products.html">Skis</a>
+              <a class="dropdown-item" href="products.html">Snowboards</a>
+              <a class="dropdown-item" href="products.html">Splitboards</a>
+            </div>
+            <!-- Dropdown links -->
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="questionnaire.html">Find My Ride</a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link disabled" href="#"><i class="fas fa-search"></i></a></li>
+          <li class="nav-item"><a class="nav-link disabled" href="#"><i class="fas fa-user-circle"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="checkout.html"><i id="cart" class="fas fa-shopping-cart"></i><span id="cart-count">12</span></a></li>
+        </ul>
+      </nav>
       <main class="mb-5">
         <div class="container">
-        <!-- PLACEHOLDER CONTENT. THIS GETS REMOVED BY JAVASCRIPT -->
-        <div class="d-flex align-items-center justify-content-center">
-          <div id="image-carousel" class="carousel slide mr-5" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img alt="Snowboard" src="https://i.imgur.com/4t78du6.png"/>
+          <!-- PLACEHOLDER CONTENT. THIS GETS REMOVED BY JAVASCRIPT -->
+          <div class="d-flex align-items-center justify-content-center">
+            <div id="image-carousel" class="carousel slide mr-5" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img alt="Snowboard" src="https://i.imgur.com/4t78du6.png"/>
+                </div>
+                <div class="carousel-item">
+                  <img alt="Snowboard" src="https://i.imgur.com/4t78du6.png"/>
+                </div>
+                <div class="carousel-item">
+                  <img alt="Snowboard" src="https://i.imgur.com/4t78du6.png"/>
+                </div>
               </div>
-              <div class="carousel-item">
-                <img alt="Snowboard" src="https://i.imgur.com/4t78du6.png"/>
+              <a class="carousel-control-prev" href="#image-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#image-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div class="product-details p-5 ml-5">
+              <h1>Banana Split</h1>
+              <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i> 236 reviews</div>
+              <div id="price">$659.99 CAD</div>
+              <br/>
+              <select id="size-select" name="size" class="w-100 mb-1">
+                <option value="149">CHOOSE A SIZE</option>
+                <option value="149">149</option>
+                <option value="150">150</option>
+                <option value="151">151</option>
+
+              </select>
+
+              <button type="button" class="btn btn-primary w-100 mt-1">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="container pt-1 mt-4 text-center" id="specifications-container">
+            <h3>Specifications</h3>
+            <div class="row">
+              <div class="col-md-6 text-center">
+                <img class="spec-image" alt="Core" src="./img/techdesimg/Core.png"/>
               </div>
-              <div class="carousel-item">
-                <img alt="Snowboard" src="https://i.imgur.com/4t78du6.png"/>
+              <div class="col-md-6 text-center">
+                <img class="spec-image" alt="Fibreglass" src="./img/techdesimg/Fibreglass.png"/>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#image-carousel" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#image-carousel" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
-          <div class="product-details p-5 ml-5">
-            <h1>Banana Split</h1>
-            <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i> 236 reviews</div>
-            <div id="price">$659.99 CAD</div>
-            <br/>
-            <select id="size-select" name="size" class="w-100 mb-1">
-              <option value="">CHOOSE A SIZE</option>
-              <option value="11">11</option>
-            </select>
-
-            <button type="button" class="btn btn-primary w-100 mt-1">ADD TO CART</button>
-          </div>
-        </div>
-        <div class="container pt-1 mt-4 text-center" id="specifications-container">
-          <h3>Specifications</h3>
-          <div class="row">
-            <div class="col-6 text-center">
-              <figure>
-                <img alt="Twin" src="https://via.placeholder.com/300x150"/>
-                <figcaption>Directional Twin</figcaption>
-              </figure>
-            </div>
-            <div class="col-6 text-center">
-              <figure>
-                <img alt="Twin" src="https://via.placeholder.com/300x150"/>
-                <figcaption>Traditional Camber</figcaption>
-              </figure>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-6 text-center">
-              <figure>
-                <img alt="Twin" src="https://via.placeholder.com/300x150"/>
-                <figcaption>Fiberglass Top</figcaption>
-              </figure>
-            </div>
-
-            <div class="col-6 text-center">
-              <figure>
-                <img alt="Twin" src="https://via.placeholder.com/300x150"/>
-                <figcaption>Birch Reinforcement Core</figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-
       </main>
 
-    </div>
+      </div>
+
       <!-- Footer -->
       <footer>
         <div class="footer-top">
@@ -127,15 +109,15 @@
               <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
                 <h5>Brand</h5>
                 <ul class="">
-                  <li><a href="#">about us</a></li>
+                  <li><a href="about.html">about us</a></li>
                   <li><a href="#">privacy</a></li>
-                  <li><a href="#">contact us</a></li>
+                  <li><a href="mailto:sukiskiandboard@gmail.com">contact us</a></li>
                 </ul>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-12 segment-three md-mb-30 sm-mb-30">
                 <h5>Orders</h5>
                 <ul class="">
-                  <li><a href="#">shipping and delivery</a></li>
+                  <li><a href="checkout.html">shipping and delivery</a></li>
                   <li><a href="#">order tracking</a></li>
                   <li><a href="#">returns and refunds</a></li>
                 </ul>
@@ -145,7 +127,7 @@
                 <ul>
                   <a href="#"><i class="fa fa-facebook"></i></a>
                   <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="https://www.instagram.com/sukiskiandboard/"><i class="fa fa-instagram"></i></a>
                 </ul>
                 <h5>Subscribe</h5>
                 <form action="form">
@@ -157,10 +139,11 @@
           </div>
         </div>
       </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="./scripts/storage.js"></script>
-    <script src="./scripts/product.js"></script>
-    <script src="./scripts/details.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      <script src="./scripts/storage.js"></script>
+      <script src="./scripts/product.js"></script>
+      <script src="./scripts/details.js"></script>
   </body>
 </html>
