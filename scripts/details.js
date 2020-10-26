@@ -1,3 +1,4 @@
+//Generates a div with fake ratings
 const generateFakeRatings = () => {
   const outer = document.createElement('div');
   const ratings = Math.floor(Math.random() * 1000);
@@ -11,6 +12,8 @@ const generateFakeRatings = () => {
 };
 
 const generateDetails = (item) => {
+  // Returns formatted html for a given item
+  // The values substituted in are  item.image, item.price and item.name
   return `<div class="d-flex align-items-center justify-content-center">
           <div id="image-carousel" class="carousel slide mr-5" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -57,10 +60,10 @@ const generateDetails = (item) => {
           <h3>Specifications</h3>
           <div class="row">
             <div class="col-md-6 text-center">
-                <img width="400" alt="Core" src="./img/techdesimg/Core.png"/>
+                <img alt="Core" src="./img/techdesimg/Core.png"/>
             </div>
             <div class="col-md-6 text-center">
-                <img width="400" alt="Fibreglass" src="./img/techdesimg/Fibreglass.png"/>
+                <img alt="Fibreglass" src="./img/techdesimg/Fibreglass.png"/>
             </div>
           </div>
        </div>`;
