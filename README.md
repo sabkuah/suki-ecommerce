@@ -95,7 +95,7 @@ enthusiasts, kids and families
 
 ## Logo
 
-(./img/Logo.svg)
+[Logo](img/Logo.svg)
 
 ## Wireframes/Prototypes
 
