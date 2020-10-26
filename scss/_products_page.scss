@@ -23,7 +23,7 @@
     z-index: 1;
     top: 20px;
     left: 10px;
-    background: #F6F6F6;
+    background: $grey-background;
     // overflow-x: hidden;
     padding: 8px 0;
 }
@@ -37,4 +37,12 @@
 
 d.products-container {
     margin-left: 120px;
+}
+.dropdown-menu{
+background-color:$grey-background;
+}
+.btn-secondary {
+    color: black !important;
+    background-color: $grey-background !important;
+    border-color: $grey-background !important;
 }
