@@ -75,13 +75,12 @@ $("#qform-submit").click(e => {
 
   console.log("form values", formValues)
   if (formValues[0] !== "ski" && formValues[0] !== "snowboard") {
-    // if (!formValues[0].includes("ski", "snowboard" )) {
     alert("Please choose ski or snowboard")
-  } else if (formValues[1] !== "powder") {
+  } else if (formValues[1] !== "all-mountain" && formValues[1] !== "park" && formValues[1] !== "backcountry" && formValues[1] !== "powder") {
     alert("Please choose your type of riding")
   } else if (!height || !weight ) {
     alert("Please add in your height and weight")
-  } else if (!height || !weight ) {
+  } else if (formValues[2] !== "beginner" && formValues[2] !== "intermediate" && formValues[2] !== "expert") {
     alert("Please choose your riding level")
   } else {
     location.replace("products.html")
