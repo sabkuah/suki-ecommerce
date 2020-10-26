@@ -1,0 +1,47 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media screen and (max-width: 576px) { 
+  .form-group {
+    width: 100%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 768px) { 
+  
+}
+
+// Large devices (desktops, 992px and up)
+@media screen and (min-width: 992px) { 
+  
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media screen and (min-width: 1200px) {
+  
+}
+
+// @media screen and (min-width: $mediumView) {
+//   nav ul {
+//     @include flex-row; // <----- MIXIN
+//     .item { // <----- NESTING
+//       display: block;
+//       border: none;
+//       padding: 0 5%;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: $mediumView) {
+//   .navbar-brand {
+//     font-size: 1.5em !important;
+//   }
+// }
+
+// @media screen and (min-width: $smallView) and (max-width: $mediumView) {
+//   .navbar-brand {
+//     padding: 0em 1.5em;
+//   }
+// }
