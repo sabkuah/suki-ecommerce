@@ -1,5 +1,15 @@
 nav li a:hover {
-  color: #7e8a97;
-  transition: 0.5s ease-in;
-  text-decoration: none;
+    color: #7e8a97;
+    transition: 0.5s ease-in;
+    text-decoration: none;
+}
+
+#cart-count {
+    font-size: 14px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    margin-left: 3px;
+    vertical-align: top;
+    border-radius: 25px;
 }

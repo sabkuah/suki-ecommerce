@@ -66,12 +66,6 @@ const generateDetails = (item) => {
        </div>`;
 };
 
-const fillTestData = () => {
-  clearStorage();
-  const testItem = new Product('Banana Split', 'https://i.imgur.com/4t78du6.png', 500.00, 'snowboard');
-  addItemToStorage('selectedItem', testItem);
-};
-
 // Wait until the page is loaded before adding content to it
 document.addEventListener('DOMContentLoaded', function () {
   //fillTestData();
@@ -80,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('main').innerHTML = generateDetails(item);
     const button = document.querySelector('#adderButton').addEventListener("click", () => {
       addItemToCart(item);
-      document.querySelector('.fa-shopping-cart').classList.add('text-success');
+      showCartCount();
     });
   }
 });
