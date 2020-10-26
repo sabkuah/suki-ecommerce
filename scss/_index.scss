@@ -91,8 +91,10 @@
     #landing-statement {
         background-color: rgba(255,255,255,0.5);
         min-height: 300px;
-        min-width: 300px;
+        max-width: 300px;
         margin-right: 15%;
         text-align: center;
+        font-size: 1.5em;
+        padding: 50px 0;
     }
 }
