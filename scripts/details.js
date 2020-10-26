@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById("alert").classList.add('d-none');
 
       // Update sessionstorage and display the updated count
+      item.size = size;
       addItemToCart(item);
       showCartCount();
     });
