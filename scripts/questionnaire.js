@@ -62,7 +62,7 @@ document.querySelectorAll('.q-field').forEach(item => {
 
 var formValues = []
 $("#qform-submit").click(e => {
-  formValues = []
+  formValues = [] // reset form values and re-add
   e.preventDefault()
   document.querySelectorAll('.selected').forEach(item => {
     console.log("items selected", item.id)
@@ -74,6 +74,7 @@ $("#qform-submit").click(e => {
   formValues.push({weight})
 
   console.log("form values", formValues)
+  //  ------ form validation ------
   if (formValues[0] !== "ski" && formValues[0] !== "snowboard") {
     alert("Please choose ski or snowboard")
   } else if (formValues[1] !== "all-mountain" && formValues[1] !== "park" && formValues[1] !== "backcountry" && formValues[1] !== "powder") {
