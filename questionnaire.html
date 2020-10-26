@@ -22,9 +22,9 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="products.html">Shop</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="products.html">Skis</a>
-            <a class="dropdown-item" href="products.html">Snowboards</a>
-            <a class="dropdown-item" href="products.html">Splitboards</a>
+            <a class="dropdown-item" href="products.html" onclick="setCategory('skis')">Skis</a>
+            <a class="dropdown-item" href="products.html" onclick="setCategory('snowboards')">Snowboards</a>
+            <a class="dropdown-item" href="products.html" onclick="setCategory('all')">All</a>
           </div>
           <!-- Dropdown links -->
         </li>
@@ -34,9 +34,9 @@
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link disabled" href="#"><i class="fas fa-search"></i></a></li>
         <li class="nav-item"><a class="nav-link disabled" href="#"><i class="fas fa-user-circle"></i></a></li>
-        <li class="nav-item"><a class="nav-link" href="checkout.html"><i id="cart" class="fas fa-shopping-cart"></i><span id="cart-count"></span></a></li>
+        <li class="nav-item"><a class="nav-link" href="checkout.html"><i id="cart" class="fas fa-shopping-cart"></i><span id="cart-count">12</span></a></li>
       </ul>
-    </nav>    
+    </nav>  
     <div class="container">     
         <main>
           <!-- QUESTIONNAIRE -->
@@ -54,10 +54,12 @@
                 </div>
               </div>
             </div>
+            <p id="alert-1" class="alert alert-danger d-none mt-1 mb-1">Please choose ski or snowboard</p>
             <br>
             <h4 class="form-title">DEFINE YOUR TYPE</h4>
             <div id="riding-type" class="form-row">
             </div>
+            <p id="alert-2" class="alert alert-danger d-none mt-1 mb-1">Please choose your type of riding</p>
             <br>
             <div class="form-row">
               <div class="form-group col-sm-12 col-md-6 col-lg-6">
@@ -73,10 +75,11 @@
                 </div>
               </div>
             </div>
+            <p id="alert-3" class="alert alert-danger d-none mt-1 mb-1">Please add in your height and weight</p>
             <h4 class="form-title">RIDING LEVEL</h4>
             <div id="riding-lvl" class="form-row">
-
             </div>
+            <p id="alert-4" class="alert alert-danger d-none mt-1 mb-1">Please choose your riding level</p>
             <br>
             <button type="submit" id="qform-submit">DONE</button>
             <br>
