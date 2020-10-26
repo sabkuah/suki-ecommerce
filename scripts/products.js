@@ -41,6 +41,6 @@ if (getCategory() === 'skis'){
   DisplayProducts (skiList);
 } else if (getCategory() === 'snowboards'){
   DisplayProducts(snowboardList);
-} else{
+} else {
   DisplayProducts (productNames);
 }
