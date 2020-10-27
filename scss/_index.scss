@@ -12,7 +12,7 @@
 
 
     a{
-        color: white;
+        color: black;
     }
 
     a.dropdown-item {
@@ -21,6 +21,10 @@
 
     a:hover, a.dropdown-item:hover {
         color: $color-secondary;
+    }
+
+    .fa-search, .fa-user-circle, .fa-shopping-cart {
+        color: white;
     }
 }
 

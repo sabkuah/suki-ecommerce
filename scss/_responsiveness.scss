@@ -23,25 +23,3 @@
   
 }
 
-// @media screen and (min-width: $mediumView) {
-//   nav ul {
-//     @include flex-row; // <----- MIXIN
-//     .item { // <----- NESTING
-//       display: block;
-//       border: none;
-//       padding: 0 5%;
-//     }
-//   }
-// }
-
-// @media screen and (max-width: $mediumView) {
-//   .navbar-brand {
-//     font-size: 1.5em !important;
-//   }
-// }
-
-// @media screen and (min-width: $smallView) and (max-width: $mediumView) {
-//   .navbar-brand {
-//     padding: 0em 1.5em;
-//   }
-// }

@@ -11,15 +11,16 @@
 </head>
 
 <body>
+      <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="index.html"><img alt="Logo" src="./img/logo-cropped.svg" width="150" height="100"/></a>
         <ul class="col-xs-4 navbar-nav mx-auto">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="products.html">Shop</a>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="products.html" onclick="setCategory('skis')">Skis</a>
-                <a class="dropdown-item" href="products.html" onclick="setCategory('snowboards')">Snowboards</a>
-                <a class="dropdown-item" href="products.html" onclick="setCategory('all')">All</a>
+              <a class="dropdown-item" href="products.html" onclick="setCategory('skis')">Skis</a>
+              <a class="dropdown-item" href="products.html" onclick="setCategory('snowboards')">Snowboards</a>
+              <a class="dropdown-item" href="products.html" onclick="setCategory('all')">All</a>
             </div>
             <!-- Dropdown links -->
           </li>
@@ -28,17 +29,17 @@
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link disabled" href="#"><i class="fas fa-search"></i></a></li>
-          <li class="nav-item"><a class="nav-link disabled" href="#"><i class="fas fa-user-circle"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="checkout.html"><i class="fas fa-shopping-cart"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-user-circle"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="checkout.html"><i id="cart" class="fas fa-shopping-cart"></i><span id="cart-count">12</span></a></li>
         </ul>
-        </nav>
+      </nav>
     <main>
         <!--Sidebar Nav-->
 
         <div class="dropdown show">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdown-products-sidenav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Filter 
-                </a>
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdown-products-sidenav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: 1em; border-radius: 0;">
+                Filter 
+            </a>
 
             <div class="dropdown-menu" aria-labelledby="dropdown-products-sidenav">
                 <a class="dropdown-item" href="#" onclick="DisplayProducts (skiList)">Skis</a>
