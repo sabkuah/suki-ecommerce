@@ -29,7 +29,6 @@ enthusiasts, kids and families
 - For logo and image design [Canva](https://www.canva.com/)
 
 ## Research: 
-
 - the logo from [Skier Sport Shop](https://skierssportshop.com/)
 - custom board idea + parallax design [Kindred](https://kindredsnowstore.com/) | [Wired](https://wiredsnowboards.com/)
 - checkout page [Stripe](https://stripe-payments-demo.appspot.com/)
@@ -54,18 +53,7 @@ enthusiasts, kids and families
 - Modal with promotion on home page
 - filter products
 - Parallax [Tutorial](https://www.w3schools.com/howto/howto_css_parallax.asp)
-
 - Search bar
-
-
-
-
-## Questions for Alex: 
-
-- clarification on personas 
-
-
-
 
 ## Pages: 
 
@@ -79,10 +67,8 @@ enthusiasts, kids and families
 - Sidenav: snowboards, skis, junior, mens, womens
 - sale icons 
 
-
 ### questionnaire 
 - "Find My Ride"
-
 
 ### product details
 - reviews 
