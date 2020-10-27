@@ -17,76 +17,51 @@
 </head>
 
 <body>
-    <div id="landing">
         <!-- Background image -->
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="index.html"><img alt="Logo" src="./img/logo-cropped.svg" width="150" height="100"/></a>
-          <ul class="col-xs-4 navbar-nav mx-auto">
+            <a class="navbar-brand" href="index.html"><img alt="Logo" src="./img/logo-cropped.svg" width="150" height="100"/></a>
+            <ul class="col-xs-4 navbar-nav mx-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="products.html">Shop</a>
-              <div class="dropdown-menu">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="products.html">Shop</a>
+                <div class="dropdown-menu">
                 <a class="dropdown-item" href="products.html" onclick="setCategory('skis')">Skis</a>
                 <a class="dropdown-item" href="products.html" onclick="setCategory('snowboards')">Snowboards</a>
                 <a class="dropdown-item" href="products.html" onclick="setCategory('all')">All</a>
-              </div>
-              <!-- Dropdown links -->
+                </div>
+                <!-- Dropdown links -->
             </li>
             <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="questionnaire.html">Find My Ride</a></li>
-          </ul>
-          <ul class="navbar-nav">
+            </ul>
+            <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link disabled" href="#"><i class="fas fa-search"></i></a></li>
             <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-user-circle"></i></a></li>
             <li class="nav-item"><a class="nav-link" href="checkout.html"><i id="cart" class="fas fa-shopping-cart"></i><span id="cart-count">12</span></a></li>
-          </ul>
+            </ul>
         </nav>
-    </div>
-
-    <!-- MAIN STORE LINKS -->
-    <div id="image-links">
-        <a href="products.html" onclick="setCategory('skis')">
-            <div id="snowboard-hero">
-                <p>Shop Skis</p>
+    
+    <div class= "login">
+        <h2 class='text-center'>Your Account</h2>
+        <br>
+        <br>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
-        </a>
-        <a href="products.html" onclick="setCategory('snowboards')">
-            <div id="ski-hero">
-                <p>Shop Snowboards</p>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
-        </a>
-    </div>
-
-    <!-- Parallax Div -->
-    <div id="statement-container" data-parallax="scroll" data-image-src="./img/aboutimage2.jpg">
-        <div id="landing-statement">
-            At Suki, the goal is to create equipment that provides a person the agency to steep themselves in moments of endeavor. Kanpai.
-        </div>
-    </div>
-
-    <!-- LATEST PRODUCTS -->
-    <div id="index-content">
-        <h1>New Arrivals</h1>
-        <div id="latest-products">
-            <a href="products.html">
-                <figure>
-                    <img alt="Product" src="img/snowboard-1.jpg" />
-                    <figcaption>Banana Split</figcaption>
-                </figure>
-            </a>
-            <a href="products.html">
-                <figure>
-                    <img alt="Product" src="img/snowboard-2.jpg" />
-                    <figcaption>Banana Split</figcaption>
-                </figure>
-            </a>
-            <a href="products.html">
-                <figure>
-                    <img alt="Product" src="img/snowboard-3.jpg" />
-                    <figcaption>Banana Split</figcaption>
-                </figure>
-            </a>
-        </div>
+            <br>
+            <br>
+            <div class = "form-row">
+                <button type="submit" class="button btn">Login</button>
+                <button type="submit" class="button btn">Sign-up</button>
+                <button type="submit" class="button btn">Forgot Password</button>
+            </div>
+          </form>
     </div>
     <!-- Footer -->
     <footer>
@@ -134,12 +109,8 @@
             </div>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="./scripts/parallax.min.js"></script>
-    <script src="./scripts/product.js"></script>
-    <script src="./scripts/storage.js"></script>
-    <script src="./scripts/landing.js"></script>
+    <script src='scripts/storage.js'></script>
+    
 </body>
 
 </html>
