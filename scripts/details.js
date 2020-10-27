@@ -14,7 +14,7 @@ const generateFakeRatings = () => {
 const generateDetails = (item) => {
   // Returns formatted html for a given item
   // The values substituted in are  item.image, item.price and item.name
-  return `<div class="d-flex align-items-center justify-content-center">
+  return `<div class="d-flex align-items-center justify-content-center product-details">
           <div id="image-carousel" class="carousel slide mr-5" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>

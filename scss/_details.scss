@@ -6,6 +6,10 @@
      margin-top: 5em;
      padding: 10em 3em 10em 3em;
  }
+
+ .product-details {
+     @include flex-responsive;
+ }
  
  .spec-image {
      width: 300px;
