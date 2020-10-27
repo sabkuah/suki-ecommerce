@@ -1,7 +1,15 @@
 #landing{
     background-image: url("../img/hero-image-lg.png");
     background-size: cover;
-    min-height: 800px;
+    // Try to focus on the snowboarder on smaller screens
+    background-position: 60% 25%;
+    min-height: 80vh;
+
+    // Increase the element width on larger screens
+    @media screen and (min-width: 768px){
+        background-position: center;
+    }
+
 
     a{
         color: white;
@@ -51,7 +59,7 @@
 
     #ski-hero, #snowboard-hero {
         min-height: 400px;
-        min-width: 600px;
+        min-width: 300px;
         display: flex;
         flex-flow: column-reverse;
         align-items: center;
@@ -60,8 +68,12 @@
         margin: 1em;
         padding: 1em 3em 1em 3em;
 
+        // Increase the element width on larger screens
+        @media screen and (min-width: 768px){
+            min-width: 400px;
+        }
+
         p {
-            // Left, right margin
             @include blue-button;
             width:100%;
         }
