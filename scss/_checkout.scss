@@ -39,7 +39,7 @@ Clickable components are card-item-quantity and cancel-item*/
 }
 
 .cart-item-image {
-    width: 40%;//15rem;
+    width: 40%; //15rem;
 }
 
 #cart-item-details {
@@ -148,4 +148,8 @@ input {
     background-color: $grey-background;
     opacity: 0.7;
     padding: 3%;
+}
+
+#ty-msg {
+    min-height: 300px;
 }
