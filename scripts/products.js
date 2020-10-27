@@ -15,7 +15,7 @@ var itemDiv = ""
 
 
 
-function DisplayProducts(products){
+function DisplayProducts(products) {
     var itemDiv = ""
     products.forEach(product => {
         console.log(product.name)
@@ -31,16 +31,16 @@ function DisplayProducts(products){
             </a>
         </div>`
     })
-document.getElementById("product-row-1").innerHTML = itemDiv
+    document.getElementById("product-row-1").innerHTML = itemDiv
 }
 
 var skiList = [item5, item6, item7, item8]
 var snowboardList = [item1, item2, item3, item4]
 
-if (getCategory() === 'skis'){
-  DisplayProducts (skiList);
-} else if (getCategory() === 'snowboards'){
-  DisplayProducts(snowboardList);
+if (getCategory() === 'skis') {
+    DisplayProducts(skiList);
+} else if (getCategory() === 'snowboards') {
+    DisplayProducts(snowboardList);
 } else {
-  DisplayProducts (productNames);
+    DisplayProducts(productNames);
 }
