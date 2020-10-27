@@ -5,12 +5,6 @@
     background-position: 60% 25%;
     min-height: 80vh;
 
-    // Increase the element width on larger screens
-    @media screen and (min-width: 768px){
-        background-position: center;
-    }
-
-
     a{
         color: black;
     }
@@ -26,6 +20,19 @@
     .fa-search, .fa-user-circle, .fa-shopping-cart {
         color: white;
     }
+
+    // Increase the element width on larger screens
+    @media screen and (min-width: 768px){
+        background-position: center;
+    }
+
+    @media screen and (max-width: 768px){
+        background-position: center;
+        a{
+            color: white;
+        }
+    }
+    
 }
 
 #index-content {
