@@ -28,3 +28,9 @@ form {
   width: 30%;
   margin-bottom: 2em;
 }
+
+@media screen and (max-width: 768px){
+  .q-field {
+    padding: 2em 1em;
+  }
+}
